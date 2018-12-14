@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/register.css">
+    <link rel="stylesheet" href="../css/reset.css">
+</head>
+
+<body>
+    <!-- 顶部导航栏 -->
+    <div class="top_nav">
+        <div class="nav_con">
+            <ul class="top-nav-tool clearfix" name="ajax_head" id="ajax_head">
+                <li class="yg-card"><span><a target="_blank" href="
+                    "
+                            id="__AD_head_zhuce" rel="nofollow">注册</a> </span>|</li>
+                <li class="yg-card"><span><a target="_blank" href="http://www.ugoshop.com/user.php?back_act=http://www.ugoshop.com/&amp;910"
+                            id="__AD_head_denglu" rel="nofollow">登录</a> </span>|</li>
+                <li class="yg-card"><span><a target="_blank" href="http://www.ugoshop.com/user.php?act=order_list" id="__AD_head_dingdan"
+                            rel="nofollow">我的订单</a> </span>|</li>
+                <li class="yg-card"><span><a target="_blank" href="http://www.ugoshop.com/user.php?act=collection_list"
+                            id="__AD_head_guanzhu" rel="nofollow">我的关注</a> </span>|</li>
+                <li class="yg-card"><span><a target="_blank" href="http://info.ugoshop.com/" id="__AD_head_zixun">资讯</a>
+                    </span>|</li>
+                <li class="yg-card"><span><a target="_blank" href="http://www.ugoshop.com/brand_cate.php" id="__AD_head_pinpai">品牌馆</a>
+                    </span>|</li>
+                <li class="dh" id="wzdh"></li>
+                <li class="yg-phone"><span class="phone_in"><a href="http://www.ugoshop.com/app/" id="_AD_head_app"
+                            class=""><i class="t"><img src="http://www.ugoshop.com/themes/ugo/images/2015/2015_public/phone.png"
+                                    width="9" height="12" alt="手机优品惠" title="优品惠手机客户端二维码"></i>手机优品惠</a> </span>
+                    <div class="down_app" style="display:none;"> <i class="t"></i>
+                        <div class="app_erm"> <a href="http://www.ugoshop.com/app/"><img alt="" title="" src="http://www.ugoshop.com/themes/ugo/images/2015/2015_public/ewm90X90.jpg"
+                                    width="90" height="90"></a>
+                            <p><a href="http://www.ugoshop.com/app/">扫一扫哦~</a></p>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!-- 中心区域 -->
+    <div class="welland">
+        <img src="../image/logEWM.gif" alt="" class="EWM">
+        
+        <!--LOGO-->
+        <div class="land_logo">
+        <input type="hidden" value="" id="jihuo">
+            <div class="l land_logo_img">
+                <a class="l" href="http://www.ugoshop.com" target="_blank"></a>
+                <span class="l reglogo"></span>
+             </div>
+             <p class="r kefuphonenum">已经注册，<a target="_blank" href="user.php">现在登录》</a></p>
+          </div>
+        <!--LOGO OVER-->
+        <!--regnav begin-->
+        <div class="regnav">
+             <ul>
+                <li class="regnav1 on"><span class="icon4">注册/TV激活</span></li>
+                <!--<li  class="regnav2"><span class="icon2">邮箱注册</span></li>-->
+                <!--<li class="regnav3"><span class="icon3">电视用户激活</span></li>-->
+             </ul>
+             <label class="regnav_tips">如有疑问请点击<a class="cg" href="/help.html" target="_blank">帮助中心</a>，或拨打客服热线：<em>400-707-0707</em></label>
+         </div>
+        <!--regnav OVER-->
+        <!--框内开始-->
+          <div class="land_con clearfix">
+        <!--手机注册开始-->
+             <div class="phonereg">
+             <input type="hidden" id="tishi" value="">
+               <form action="" method="get" monitorpoint_t_p_c_e_d="1">
+                 <div class="item phone-regName"> 
+                    <span class="l labname1">手机号码：</span>
+                    <div class="l item-ifo app1">
+                       <input class="regk text1" type="text" value="" id="sj_code">
+                       <div id="phonea1" class="i-name land_ico"></div>
+                    </div>  
+                 </div>
+                  <div class="item phone-regName" id="itemh">
+                     <span class="l labname1">验证码：</span>
+                     <div class="item-ifo l" id="yan_check_code">
+                         <input type="text" name="pcheck_code" class="yhm_text1 l text8" id="yaz_ma_pcheck_code" value="">
+                         <label class="yimg"><img src="http://www.ugoshop.com/api/checkcode.php?code_len=4&amp;font_size=14&amp;width=89&amp;height=30&amp;font_color=%23313131&amp;background=%23e3e3e3&amp;is=1&amp;num=1&amp;time=3784bb7724dfb7cb32682fcf4d289c3f&amp;rand=957" id="checkcode1" onclick="setTimeout(this.src=this.src+&quot;&amp;&quot;+Math.random())" class="yzm l"> 
+                                看不清，
+                            <a href="javascript:;" class="code_refresh cg">换一张</a>
+                         </label>
+                         <input type="hidden" id="check_box_code1" name="check_box_code" value="">
+                     </div>                 
+                </div>
+                 <div class="item phone-regName"> 
+                    <span class="l labname1">设置密码：</span>
+                    <div class="l item-ifo app2">
+                       <input class="regk text2" type="password" value="">
+                       <div id="setpassword" class="i-name land_ico2"></div>
+                    </div>  
+                 </div>
+                 <div class="item phone-regName"> 
+                    <span class="l labname1">确认密码：</span>
+                    <div class="l item-ifo">
+                       <input class="regk text3" type="password" value="">
+                       <div id="confirm" class="i-name land_ico3"></div>
+                    </div>  
+                 </div>
+                <div class="item phone-regName" id="itemh">
+                     <span class="l labname1">短信验证码：</span>
+                     <div class="item-ifo l">
+                         <input type="text" class="yhm_text1 l" value="" id="verif_code">
+                          <label class="l">
+                        <input class="ymasage" id="btn5" value="获取短信验证码" type="button">
+                          </label>
+                        
+                     </div>                 
+                </div>
+                <div class="item phone-regName" id="itemh2">
+                     <span class="l labname1"></span>
+                     <div class="item-ifo l">
+                         <input type="checkbox" class="l checkx" id="checkx1" checked="checked">
+                          <label class="l checkx">
+                             我已阅读并同意<a class="cg" href="/article-48.html" target="_blank">《优品惠用户服务承诺》</a>     
+                          </label> 
+                          <input type="hidden" value="" id="hidden1">
+                     </div>                 
+                </div>
+                <div class="item phone-regName" id="itemh3">
+                     <span class="l labname1"></span>
+                     <div class="item-ifo l">
+                         <input type="button" id="btn1" class="registsubmit" value="">
+                         <br>
+                         <div class="login_tips">
+                           <p>温馨提示：</p>
+                           优品惠升级为电视购物大全，其中收录了优购物、时尚购物等多家优质购物频道，您可以选购更多优质商品，欢迎您的光临！
+                         </div>
+                         <!-- <label>如有疑问请点击<a class="cg" href="/help.html" target="_blank">帮助中心</a>，或拨打客服热线：<em>400-707-0707</em></label> -->
+                     </div>                 
+                </div>
+               </form>
+             </div>
+        <!--手机注册结束-->
+        <!--邮箱注册开始-->
+             <!--<div class="mailreg"   style="display:none">
+             <input type='hidden'  id="email_tishi" value="">
+             <input type='hidden'  id="back_act" value="">
+                     <form action="" method="get">
+                 <div class="item phone-regName"> 
+                    <span class="l labname1">邮箱地址：</span>
+                    <div class="l item-ifo app4">
+                       <input class="regk text4" type="text" value="" id="regk_email"/>
+                       <div id="emailadd" class="i-name land_ico4"></div>
+                    </div>  
+                 </div>
+                 <div class="item phone-regName"> 
+                    <span class="l labname1">设置密码：</span>
+                    <div class="l item-ifo app5">
+                       <input class="regk text5" type="password" value="" />
+                       <div id="esetpassword" class="i-name land_ico5"></div>
+                    </div>  
+                 </div>
+                 <div class="item phone-regName"> 
+                    <span class="l labname1">确认密码：</span>
+                    <div class="l item-ifo">
+                       <input class="regk text6" type="password" id="password"value="" />
+                       <div id="conforpw" class="i-name land_ico6"></div>
+                    </div>  
+                 </div>
+                <div class="item phone-regName" id="itemh">
+                     <span class="l labname1">验证码：</span>
+                     <div class="item-ifo l">
+                         <input type="text" class="yhm_text1 l text8" id="yaz_ma" value="" />
+                         <label class="yimg">
+                            <img src="/api/checkcode.php?code_len=4&font_size=14&width=89&height=30&font_color=%23313131&background=%23e3e3e3&time=1544691148" id="checkcode" onclick="this.src=this.src+&quot;&amp;&quot;+Math.random()" class="yzm l">
+                                看不清，
+                            <a href="javascript:;" class="code_refresh cg">换一张</a>
+                         </label>
+                     <script>
+                        $('.code_refresh').click(function(){
+                        $(this).prev().click();
+            });
+        
+                         </script>
+                     </div>                 
+                </div>
+                <div class="item phone-regName" id="itemh2">
+                     <span class="l labname1"></span>
+                     <div class="item-ifo l" id="tongyi">
+                         <input type="checkbox" class="l checkx" id="checkx" checked="checked">
+                         
+                          <label class="l checkx">
+                             我已阅读并同意<a class="cg" href="/article-48.html" target="_blank">《优品惠用户服务承诺》</a>     
+                          </label> 
+                          <input type="hidden" value="" id="hidden">
+                     </div>                 
+                </div>
+                <div class="item phone-regName" id="itemh3">
+                     <span class="l labname1"></span>
+                     <div class="item-ifo l">
+                         <input type="button" id="btn2"class="registsubmit" value="" />
+                         <br />
+                         <label>如有疑问请点击<a class="cg" href="/help.html" target="_blank">帮助中心</a>，或拨打客服热线：<em>400-707-0707</em></label>
+                     </div>                 
+                </div>
+               </form>
+             </div>-->
+        <!--邮箱注册结束-->
+        <!--电视激活开始-->
+             <div class="TVactive" style="display:none">
+               <form action="" method="get" monitorpoint_t_p_c_e_d="1">
+                 <div class="item phone-regName"> 
+                 <input type="hidden" id="activeuser" value="">
+                 <input type="hidden" id="activeuser2" value="">
+                    <span class="l labname1">手机号码：</span>
+                    <div class="l item-ifo app7">
+                       <input class="regk text7" type="text" value="" id="mobile_activation">
+                       <div id="tvphone" class="i-name land_ico7"></div>
+                       
+                    </div>  
+                 </div>
+                  <!-- <div class="item phone-regName" id="itemh">
+                     <span class="l labname1">验证码：</span>
+                     <div class="item-ifo l" id="yan_check_code">
+                         <input type="text" name="pcheck_code" class="yhm_text1 l text8" id="yaz_ma_pcheck_code2" value="">
+                         <label class="yimg"><img src="http://www.ugoshop.com/api/checkcode.php?code_len=4&amp;font_size=14&amp;width=89&amp;height=30&amp;font_color=%23313131&amp;background=%23e3e3e3&amp;is=1&amp;num=211&amp;time=3784bb7724dfb7cb32682fcf4d289c3f&amp;rand=340" id="checkcode2" onclick="setTimeout(this.src=this.src+&quot;&amp;&quot;+Math.random())" class="yzm l">                   
+                                看不清，
+                            <a href="javascript:;" class="code_refresh cg">换一张</a>
+                         </label>
+                     </div>    5nn 
+                     <input type="hidden" id="check_box_code2" name="check_box_code" value="0">
+                </div> -->
+                <div class="item phone-regName">
+                     <span class="l labname1">短信验证码：</span>
+                     <div class="item-ifo l" id="phone-regName">
+                         <input type="text" class="yhm_text1 l text8" value="" id="yz">
+                          <label class="l">
+                             <input class="ymasage" id="btn" value="获取短信验证码" type="button">     
+                          </label> 
+                     </div> 
+                </div>
+                 <div class="item phone-regName"> 
+                    <span class="l labname1">设置密码：</span>
+                    <div class="l item-ifo app9">
+                       <input class="regk text9" type="password" value="">
+                       <div id="tvsetpw" class="i-name land_ico9"></div>
+                    </div>  
+                 </div>
+                 <div class="item phone-regName" id="itemh"> 
+                    <span class="l labname1">确认密码：</span>
+                    <div class="l item-ifo" id="item-ifo">
+                       <input class="regk text10" type="password" value="" id="passwordss">
+                       <div id="contvpaw" class="i-name land_ico10"></div>
+                    </div>  
+                 </div>
+                <div class="item phone-regName" id="itemh2">
+                     <span class="l labname1"></span>
+                     <div class="item-ifo l">
+                         <input type="checkbox" class="l checkx" id="checkx2" checked="checked">
+                          <label class="l checkx">
+                             我已阅读并同意<a class="cg" href="/article-48.html" target="_blank">《优品惠用户服务承诺》</a>     
+                          </label> 
+                          <input type="hidden" value="" id="hidden2">
+                     </div>                 
+                </div>
+                <div class="item phone-regName" id="itemh3">
+                     <span class="l labname1"></span>
+                     <div class="item-ifo l">
+                         <input type="button" id="btn3" class="registsubmit" value="">
+                         <br>
+                         <label>如有疑问请点击<a class="cg" href="/help.html" target="_blank">帮助中心</a>，或拨打客服热线：<em>400-707-0707</em></label>
+                     </div>                 
+                </div>
+               </form>
+             </div>
+        <!--电视激活开始-->
+        </div>
+        <!--框内结束-->
+        </div>
+    <!-- 底部 -->
+    <div class="footer">
+        <div class="footer_con">
+            <div class="webz"><img alt="" src="http://www.ugoshop.com/themes/ugo/images/2015/2015_public/footer_ad.jpg"
+                    width="1000" height="102"></div>
+        </div>
+        <div class="footer_link">
+            <div class="flist clearfix">
+                <dl class="flistdl">
+                    <dt>新手上路</dt>
+                    <dd><a target="_blank" href="http://www.ugoshop.com/article-37.html">新用户注册</a></dd>
+                    <dd><a target="_blank" href="http://www.ugoshop.com/article-46.html">忘记密码</a></dd>
+                    <dd><a target="_blank" href="http://www.ugoshop.com/article-45.html">购物流程</a></dd>
+                </dl>
+                <dl class="flistdl">
+                    <dt>支付配送</dt>
+                    <dd><a target="_blank" href="http://www.ugoshop.com/article-38.html">货到付款</a></dd>
+                    <dd><a target="_blank" href="http://www.ugoshop.com/article-49.html">支付宝</a></dd>
+                    <dd><a target="_blank" href="http://www.ugoshop.com/article-52.html">配送方式</a></dd>
+                </dl>
+                <dl class="flistdl">
+                    <dt>会员服务</dt>
+                    <dd><a target="_blank" href="http://www.ugoshop.com/article-54.html">服务承诺</a></dd>
+                    <dd><a target="_blank" href="http://www.ugoshop.com/article-1379.html">会员制度</a></dd>
+                    <dd><a target="_blank" href="http://www.ugoshop.com/article-47.html">积分介绍</a></dd>
+                    <dd><a target="_blank" href="http://www.ugoshop.com/article-40.html">退换货原则</a></dd>
+                </dl>
+                <dl class="flistdl nob">
+                    <dt>关于优品惠</dt>
+                    <dd><a target="_blank" href="http://www.ugoshop.com/about_index.php">企业介绍</a></dd>
+                    <dd><a target="_blank" href="http://www.ugoshop.com/about_contact.php">联系我们</a></dd>
+                    <dd><a target="_blank" href="http://www.ugoshop.com/about_zhaoshang.php">招商专区</a></dd>
+                </dl>
+                <dl class="flistdl2 clearfix">
+                    <dt class="l"><a target="_blank" href="http://www.ugoshop.com/app/"><img alt="" src="../image/ewm90X90.jpg"
+                                width="80" height="80"><i>手机优品惠</i><em>（优购物）</em></a></dt>
+                    <dd class="l"><img alt="" src="../image/foot_dh.jpg" width="149" height="38"></dd>
+                </dl>
+            </div>
+        </div>
+        <div class="footerinfo webw">
+            <p class="footer-list"><a target="_blank" href="http://www.ugoshop.com">首页</a> |
+                <a target="_blank" href="http://www.ugoshop.com/about_index.php">关于优品惠</a> |
+                <a target="_blank" href="/about_index.php?company=ugo">优购物</a> |
+                <a target="_blank" href="http://www.ugoshop.com/about_contact.php">联系我们</a> |
+                <a target="_blank" href="http://www.ugoshop.com/about_join.php">招贤纳士</a> |
+                <a target="_blank" href="http://www.ugoshop.com/about_zhaoshang.php">招商专区</a> |
+                <a target="_blank" href="http://scm.17ugo.com/">供应商入口</a> |
+                <a target="_blank" href="http://www.ugoshop.com/train/train_c.html">新人培训</a> |
+                <a target="_blank" href="http://www.ugoshop.com/link.php">友情链接</a> |
+                <a target="_blank" href="http://www.ugoshop.com/sitemap.html">网站地图</a> |
+                <a target="_blank" href="http://info.ugoshop.com/">资讯中心</a> |
+                <a target="_blank" href="http://www.ugoshop.com/review.html">评论</a> |
+                <a target="_blank" href="http://www.ugoshop.com/photo.html"> 图片</a>
+            </p>
+            <div class="yqlink clearfix">
+                <p class="dlphh l" id="friend_link"><em>友情链接：</em><a target="_blank" href="http://www.loho88.com/">配眼镜</a><a
+                        target="_blank" href="http://www.zocai.com/">佐卡伊珠宝网</a><a target="_blank" href="http://www.wbiao.cn/">腕表名表</a><a
+                        target="_blank" href="http://www.kaitao.cn/">如何开网店</a><a target="_blank" href="http://www.sodao.com">免费试用</a><a
+                        target="_blank" href="http://www.crd.cn/">钻戒网</a></p>
+                <div class="r_button r">▼</div>
+            </div>
+            <p class="copyright">优品_优品惠（优购物）全球优品特卖网站 专属于千万女性的优品特卖网站,优品_优品惠（优购物）电视购物官方网站,100%正品保证 支持货到付款.</p>
+            <p class="copyright">Copyright©2007-2017 &nbsp; 公司名称:北京惠买网络科技有限公司 &nbsp; 公司地址:北京市北京经济技术开发区同济南路19号7幢2层C区
+                服务热线：400-707-0707</p>
+            <p class="footer-list copyright"> 统一社会信用代码:91110302339739621C &nbsp; ICP备案号:京ICP备15039150号-1 &nbsp;
+                食品流通许可证编号:JY11131010332635 &nbsp;<a href="/ugoshop.html" target="_blank">营业执照</a><a href="http://img.ugoshop.com/images/wangwenzheng.jpg"
+                    target="_blank">京网文(2017)10902-1271</a>
+                <a href="http://img.ugoshop.com/images/ugo_edi.png" target="_blank">增值业务经营许可证：京B2-20181380 </a>
+            </p>
+            <div style="margin:0 auto;text-align:center;">
+                <a target="_blank" href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=11030102000055"
+                    style="display:inline-block;text-decoration:none;height:22px;line-height:22px;">
+                    <img src="../image/bei.png" style="float:left;">
+                    <p style="float:left;margin: 0px 0px 0px 5px; color:#555;">京公网安备 11030102000055号</p>
+                </a>
+            </div>
+        </div>
+    </div>
+</body>
+<!-- jquery -->
+<script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.js"></script>
+<script src="../scripts/register.js"></script>
+
+</html>

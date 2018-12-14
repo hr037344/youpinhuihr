@@ -1,0 +1,524 @@
+@charset "UTF-8";
+.fr {
+  float: right; }
+
+.fl {
+  float: left; }
+
+a {
+  text-decoration: none;
+  color: #222;
+  outline: none; }
+
+.rel {
+  position: relative; }
+
+.clearfix:after {
+  clear: both;
+  content: '';
+  font-size: 0;
+  display: block;
+  visibility: hidden;
+  height: 0; }
+
+.l {
+  float: left; }
+
+.r {
+  float: right; }
+
+.webw {
+  margin: 0 auto;
+  width: 1140px; }
+
+.navul li.channel a.hover {
+  background-color: #bc0600; }
+
+.yg-phone span a.active {
+  color: #f70800; }
+
+.webz {
+  margin: 0 auto;
+  width: 1000px; }
+
+body {
+  font-family: "\5FAE\8F6F\96C5\9ED1",tahoma,arial,"\u5b8b\u4f53",sans-serif,Microsoft YaHei !important;
+  -webkit-font-smoothing: subpixel-antialiased !important;
+  font-size: 12px; }
+
+.top_nav {
+  width: 100%;
+  height: 29px;
+  background: #f6f6f6;
+  border-bottom: 1px solid #ddd; }
+  .top_nav .nav_con {
+    width: 1000px;
+    height: 28px;
+    margin: 0 auto; }
+    .top_nav .nav_con .nav_notice {
+      width: 250px;
+      height: 29px;
+      float: left;
+      font-size: 12px;
+      overflow: hidden;
+      line-height: 28px;
+      position: relative; }
+      .top_nav .nav_con .nav_notice span {
+        background-image: url(../image/icons.png);
+        background-repeat: no-repeat;
+        float: left;
+        background-position: -98px -196px;
+        padding-left: 18px;
+        color: #666; }
+      .top_nav .nav_con .nav_notice .show_notice {
+        float: left;
+        height: 28px;
+        position: absolute;
+        left: 57px; }
+        .top_nav .nav_con .nav_notice .show_notice li {
+          width: 190px;
+          overflow: hidden;
+          white-space: nowrap;
+          text-overflow: ellipsis;
+          color: #666;
+          height: 28px;
+          float: left; }
+          .top_nav .nav_con .nav_notice .show_notice li a {
+            color: #666; }
+    .top_nav .nav_con .top-nav-tool {
+      float: right;
+      line-height: 28px;
+      position: relative;
+      z-index: 900; }
+      .top_nav .nav_con .top-nav-tool .yg-card {
+        float: left;
+        color: #666; }
+        .top_nav .nav_con .top-nav-tool .yg-card span {
+          padding-right: 10px;
+          padding-left: 10px; }
+          .top_nav .nav_con .top-nav-tool .yg-card span a {
+            color: #666; }
+          .top_nav .nav_con .top-nav-tool .yg-card span a:hover {
+            color: #f70800; }
+      .top_nav .nav_con .top-nav-tool .dh {
+        float: left;
+        color: #666; }
+      .top_nav .nav_con .top-nav-tool .yg-phone {
+        float: left;
+        color: #666;
+        position: relative;
+        z-index: 13; }
+        .top_nav .nav_con .top-nav-tool .yg-phone span a {
+          color: #666;
+          padding-left: 12px;
+          display: block; }
+          .top_nav .nav_con .top-nav-tool .yg-phone span a i {
+            float: left;
+            display: inline-block;
+            width: 9px;
+            height: 26px;
+            margin-right: 5px; }
+            .top_nav .nav_con .top-nav-tool .yg-phone span a i img {
+              margin-top: 8px; }
+        .top_nav .nav_con .top-nav-tool .yg-phone span a:hover {
+          color: #f70800; }
+        .top_nav .nav_con .top-nav-tool .yg-phone .down_app {
+          display: none;
+          background-color: #fff;
+          padding: 10px;
+          position: absolute;
+          top: 26px;
+          left: -6px;
+          -moz-box-shadow: 0 0 3px rgba(0, 0, 0, 0.2);
+          -webkit-box-shadow: 0 0 3px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 0 3px rgba(0, 0, 0, 0.2);
+          border: 1px solid #ddd;
+          z-index: 22; }
+          .top_nav .nav_con .top-nav-tool .yg-phone .down_app i {
+            display: block;
+            position: absolute;
+            background: url(../image/icon.png) no-repeat 0 -145px;
+            width: 18px;
+            height: 8px;
+            left: 45px;
+            top: -7px; }
+          .top_nav .nav_con .top-nav-tool .yg-phone .down_app .app_erm {
+            width: 90px;
+            height: auto;
+            text-align: center; }
+      .top_nav .nav_con .top-nav-tool .yg_phone:hover {
+        display: block; }
+
+.welland {
+  width: 968px;
+  margin: 0 auto;
+  font: 12px '宋体';
+  padding-bottom: 50px; }
+  .welland .EWM {
+    position: absolute;
+    top: 152px;
+    left: 50%;
+    margin: 0 0 0 -628px; }
+  .welland .land_logo {
+    height: 112px; }
+    .welland .land_logo .land_logo_img {
+      height: 57px;
+      margin-top: 31px; }
+      .welland .land_logo .land_logo_img a {
+        display: block;
+        height: 57px;
+        overflow: hidden;
+        width: 185px;
+        background: url(../image/welland.gif) 0 0 no-repeat; }
+      .welland .land_logo .land_logo_img .reglogo {
+        display: block;
+        height: 57px;
+        overflow: hidden;
+        width: 168px;
+        background: url(../image/welreg_01.gif) 0 0 no-repeat; }
+    .welland .land_logo .kefuphonenum {
+      color: #525252;
+      padding-top: 70px; }
+      .welland .land_logo .kefuphonenum a {
+        color: #0089cf; }
+  .welland .regnav {
+    height: 42px;
+    margin-top: 5px; }
+    .welland .regnav ul .on {
+      background: url(../image/welreg_01.gif) 0 -58px no-repeat;
+      color: #FFF;
+      display: block;
+      float: left;
+      margin-right: 2px;
+      width: 225px;
+      height: 42px;
+      cursor: pointer;
+      line-height: 42px;
+      font-size: 14px;
+      color: #777777;
+      font-weight: 600;
+      text-align: center; }
+      .welland .regnav ul .on .icon4 {
+        background: url(../image/welreg_01.gif) 0 -233px no-repeat;
+        height: 16px;
+        padding-left: 20px;
+        color: #FFF; }
+    .welland .regnav .regnav_tips {
+      float: right;
+      margin-top: 15px; }
+      .welland .regnav .regnav_tips .cg {
+        color: #0089CF; }
+      .welland .regnav .regnav_tips em {
+        font-size: 13px;
+        color: #eb0007; }
+  .welland .land_con {
+    padding-top: 45px;
+    border: 2px solid #ff8400;
+    width: 964px; }
+    .welland .land_con .phonereg .item {
+      height: 52px; }
+      .welland .land_con .phonereg .item span {
+        display: block;
+        text-align: right;
+        width: 187px;
+        padding-right: 15px;
+        height: 37px;
+        line-height: 37px;
+        color: #666666; }
+      .welland .land_con .phonereg .item .item-ifo {
+        position: relative;
+        z-index: 1; }
+        .welland .land_con .phonereg .item .item-ifo .regk {
+          width: 314px;
+          height: 25px;
+          line-height: 25px;
+          padding: 5px 25px 5px 10px;
+          border: 1px solid #a2a2a2; }
+        .welland .land_con .phonereg .item .item-ifo .land_ico {
+          width: 16px;
+          height: 16px;
+          background: url(../image/welland.gif) 0 -229px no-repeat;
+          position: absolute;
+          top: 8px;
+          right: 9px;
+          z-index: 10; }
+    .welland .land_con .phonereg .item {
+      height: 52px; }
+      .welland .land_con .phonereg .item span {
+        display: block;
+        text-align: right;
+        width: 187px;
+        padding-right: 15px;
+        height: 37px;
+        line-height: 37px;
+        color: #666666; }
+      .welland .land_con .phonereg .item .item-ifo {
+        position: relative;
+        z-index: 1; }
+        .welland .land_con .phonereg .item .item-ifo .yhm_text1 {
+          font: 15px Arial;
+          color: #222;
+          width: 102px;
+          padding: 5px 10px 5px 10px;
+          height: 25px;
+          line-height: 25px;
+          border: 1px solid #a2a2a2; }
+        .welland .land_con .phonereg .item .item-ifo .yimg {
+          line-height: 35px; }
+          .welland .land_con .phonereg .item .item-ifo .yimg img {
+            margin: 3px 5px 0; }
+          .welland .land_con .phonereg .item .item-ifo .yimg a {
+            color: #0089cf; }
+    .welland .land_con .phonereg .item {
+      height: 52px; }
+      .welland .land_con .phonereg .item span {
+        display: block;
+        text-align: right;
+        width: 187px;
+        padding-right: 15px;
+        height: 37px;
+        line-height: 37px;
+        color: #666666; }
+      .welland .land_con .phonereg .item .item-ifo {
+        position: relative;
+        z-index: 1; }
+        .welland .land_con .phonereg .item .item-ifo .regk {
+          width: 314px;
+          height: 25px;
+          line-height: 25px;
+          padding: 5px 25px 5px 10px;
+          border: 1px solid #a2a2a2; }
+        .welland .land_con .phonereg .item .item-ifo .land_ico2 {
+          width: 16px;
+          height: 19px;
+          background: url(../image/welland.gif) 0 -251px no-repeat;
+          position: absolute;
+          top: 8px;
+          right: 9px;
+          z-index: 10; }
+    .welland .land_con .phonereg .item {
+      height: 52px; }
+      .welland .land_con .phonereg .item span {
+        display: block;
+        text-align: right;
+        width: 187px;
+        padding-right: 15px;
+        height: 37px;
+        line-height: 37px;
+        color: #666666; }
+      .welland .land_con .phonereg .item .item-ifo {
+        position: relative;
+        z-index: 1; }
+        .welland .land_con .phonereg .item .item-ifo .regk {
+          width: 314px;
+          height: 25px;
+          line-height: 25px;
+          padding: 5px 25px 5px 10px;
+          border: 1px solid #a2a2a2; }
+        .welland .land_con .phonereg .item .item-ifo .land_ico3 {
+          width: 16px;
+          height: 19px;
+          background: url(../image/welland.gif) 0 -251px no-repeat;
+          position: absolute;
+          top: 8px;
+          right: 9px;
+          z-index: 10; }
+    .welland .land_con .phonereg .item {
+      height: 52px; }
+      .welland .land_con .phonereg .item span {
+        display: block;
+        text-align: right;
+        width: 187px;
+        padding-right: 15px;
+        height: 37px;
+        line-height: 37px;
+        color: #666666; }
+      .welland .land_con .phonereg .item .item-ifo {
+        position: relative;
+        z-index: 1; }
+        .welland .land_con .phonereg .item .item-ifo .regk {
+          width: 314px;
+          height: 25px;
+          line-height: 25px;
+          padding: 5px 25px 5px 10px;
+          border: 1px solid #a2a2a2; }
+        .welland .land_con .phonereg .item .item-ifo .land_ico3 {
+          width: 16px;
+          height: 19px;
+          background: url(../image/welland.gif) 0 -251px no-repeat;
+          position: absolute;
+          top: 8px;
+          right: 9px;
+          z-index: 10; }
+    .welland .land_con .phonereg .item {
+      height: 52px; }
+      .welland .land_con .phonereg .item span {
+        display: block;
+        text-align: right;
+        width: 187px;
+        padding-right: 15px;
+        height: 37px;
+        line-height: 37px;
+        color: #666666; }
+      .welland .land_con .phonereg .item .item-ifo {
+        position: relative;
+        z-index: 1; }
+        .welland .land_con .phonereg .item .item-ifo .yhm_text1 {
+          font: 15px Arial;
+          color: #222;
+          width: 102px;
+          padding: 5px 10px 5px 10px;
+          height: 25px;
+          line-height: 25px;
+          border: 1px solid #a2a2a2; }
+        .welland .land_con .phonereg .item .item-ifo .ymasage {
+          width: 116px;
+          height: 26px;
+          border: none;
+          background: url(../image/welreg_01.gif) 0 -146px no-repeat;
+          cursor: pointer;
+          margin: 6px 0 0 10px;
+          display: block;
+          line-height: 26px;
+          text-align: center;
+          color: #858585;
+          font-size: 12px;
+          font-family: "宋体"; }
+    .welland .land_con .phonereg .item {
+      height: 52px; }
+      .welland .land_con .phonereg .item span {
+        display: block;
+        text-align: right;
+        width: 187px;
+        padding-right: 15px;
+        height: 37px;
+        line-height: 37px;
+        color: #666666; }
+      .welland .land_con .phonereg .item .item-ifo {
+        position: relative;
+        z-index: 1; }
+        .welland .land_con .phonereg .item .item-ifo a {
+          color: #0089CF; }
+    .welland .land_con .phonereg .item {
+      height: 52px; }
+      .welland .land_con .phonereg .item span {
+        display: block;
+        text-align: right;
+        width: 187px;
+        padding-right: 15px;
+        height: 37px;
+        line-height: 37px;
+        color: #666666; }
+      .welland .land_con .phonereg .item .item-ifo {
+        position: relative;
+        z-index: 1; }
+        .welland .land_con .phonereg .item .item-ifo .registsubmit {
+          width: 126px;
+          height: 33px;
+          border: none;
+          background: url(../image/welreg_01.gif) 0 -175px no-repeat;
+          /* margin-bottom: 40px; */
+          cursor: pointer; }
+        .welland .land_con .phonereg .item .item-ifo .login_tips {
+          padding: 25px 0;
+          color: #888;
+          width: 351px;
+          line-height: 22px; }
+          .welland .land_con .phonereg .item .item-ifo .login_tips p {
+            olor: #666;
+            font-weight: 600; }
+
+.footer {
+  height: auto;
+  text-align: center;
+  padding: 0;
+  background: none;
+  font-family: "\5FAE\8F6F\96C5\9ED1",tahoma,arial,"\u5b8b\u4f53",sans-serif;
+  -webkit-font-smoothing: subpixel-antialiased !important;
+  padding-bottom: 90px;
+  border-top: 1px solid #e3e3e3; }
+  .footer .footer_con {
+    height: 100px;
+    background-color: #f6f6f6;
+    margin: 0 auto;
+    width: 1000px; }
+  .footer .footer_link {
+    margin: 0 auto;
+    width: 1000px; }
+    .footer .footer_link .flist {
+      border-bottom: 1px solid #e6e6e6;
+      padding: 26px 0 26px 75px; }
+      .footer .footer_link .flist .flistdl {
+        float: left;
+        width: 95px;
+        height: 114px;
+        padding-left: 42px;
+        border-right: 1px dotted #e6e6e6;
+        text-align: left; }
+        .footer .footer_link .flist .flistdl dt {
+          color: #333;
+          font-size: 16px;
+          height: 26px;
+          line-height: 26px; }
+        .footer .footer_link .flist .flistdl dd {
+          height: 22px;
+          line-height: 22px; }
+          .footer .footer_link .flist .flistdl dd a {
+            background: transparent none repeat scroll 0 0; }
+      .footer .footer_link .flist .flistdl2 {
+        margin-left: 20px;
+        float: left; }
+        .footer .footer_link .flist .flistdl2 dt {
+          width: 80px;
+          text-align: center; }
+          .footer .footer_link .flist .flistdl2 dt em {
+            color: #999; }
+        .footer .footer_link .flist .flistdl2 dd {
+          margin: 25px 0 0 25px; }
+    .footer .footer_link .flist::after {
+      content: ".";
+      display: block;
+      height: 0;
+      clear: both;
+      visibility: hidden; }
+  .footer .footerinfo {
+    padding-top: 22px;
+    text-align: center; }
+    .footer .footerinfo .footer-list {
+      height: 26px;
+      color: #555; }
+      .footer .footerinfo .footer-list a {
+        color: #555;
+        padding: 0 8px;
+        font-size: 13px; }
+    .footer .footerinfo .yqlink {
+      width: 960px;
+      margin: 0 auto; }
+      .footer .footerinfo .yqlink .dlphh {
+        line-height: 22px;
+        height: 22px;
+        overflow: hidden;
+        text-align: left;
+        width: 900px; }
+        .footer .footerinfo .yqlink .dlphh em {
+          padding-right: 8px;
+          color: #666; }
+        .footer .footerinfo .yqlink .dlphh a {
+          padding-right: 8px;
+          color: #555; }
+      .footer .footerinfo .yqlink .r_button {
+        width: 50px;
+        height: 22px;
+        line-height: 22px;
+        cursor: pointer;
+        color: #555; }
+    .footer .footerinfo .copyright {
+      color: #555;
+      line-height: 22px; }
+    .footer .footerinfo .copyright {
+      color: #555;
+      line-height: 22px; }
+      .footer .footerinfo .copyright a {
+        color: #555;
+        padding: 0 8px;
+        font-size: 13px; }

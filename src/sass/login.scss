@@ -1,0 +1,440 @@
+@import"./public.scss";
+//顶部导航栏
+.top_nav{
+    width: 100%;
+    height: 29px;
+    background: #f6f6f6;
+    border-bottom:1px solid #ddd;
+    .nav_con{
+        width: 1000px;
+        height: 28px;
+        margin: 0 auto;
+        .nav_notice{
+            width: 250px;
+            height: 29px;
+            float: left;
+            font-size: 12px;
+            overflow: hidden;
+            line-height: 28px;
+            position: relative;
+            span {
+                background-image:url(../image/icons.png);
+                background-repeat: no-repeat;
+                float: left;
+                background-position: -98px -196px;
+                padding-left: 18px;
+                color: #666;
+            }
+            .show_notice{
+                float: left;
+                height: 28px;
+                position: absolute;
+                left: 57px;
+                li{
+                    width: 190px;
+                    overflow: hidden;
+                    white-space: nowrap;
+                    text-overflow: ellipsis;
+                    color: #666;
+                    height: 28px;
+                    float: left;
+                    a{
+                        color:#666;
+                    }
+                }
+            }
+        }
+        .top-nav-tool{
+            float: right;
+            line-height: 28px;
+            position: relative;
+            z-index: 900;
+            .yg-card{
+                float: left;
+                color: #666;
+                span{
+                    padding-right: 10px;
+                    padding-left: 10px;
+                    a{
+                        color: #666;
+                    }
+                    a:hover{
+                        color:#f70800;
+                    }
+                }
+            }
+            .dh{
+                float: left;
+                color: #666;
+            }
+            .yg-phone{
+                float: left;
+                color: #666;    
+                position: relative;
+                z-index: 13;
+                span{
+                   
+                    a{
+                        color: #666;
+                        padding-left: 12px;
+                        display: block;
+                        i{
+                            float: left;
+                            display: inline-block;
+                            width: 9px;
+                            height: 26px;
+                            margin-right: 5px;
+                            img{
+                                margin-top: 8px;
+                            }
+                        }
+                    }
+                    a:hover{
+                        color:#f70800;
+                    }
+                }
+                .down_app{
+                    display: none;
+                    background-color: #fff;
+                    padding: 10px;
+                    position: absolute;
+                    top: 26px;
+                    left: -6px;
+                    -moz-box-shadow: 0 0 3px rgba(0, 0, 0, 0.2);
+                    -webkit-box-shadow: 0 0 3px rgba(0, 0, 0, 0.2);
+                    box-shadow: 0 0 3px rgba(0, 0, 0, 0.2);
+                    border: 1px solid #ddd;
+                    z-index: 22;
+                    i{
+                        display: block;
+                        position: absolute;
+                        background: url(../image/icon.png) no-repeat 0 -145px;
+                        width: 18px;
+                        height: 8px;
+                        left: 45px;
+                        top: -7px;
+                    }
+                    .app_erm{
+                        width: 90px;
+                        height: auto;
+                        text-align: center;
+                    }
+               }
+            }
+            .yg_phone:hover{
+                display: block;
+            }
+        }
+        
+    }      
+}
+//中心区域
+.welland{
+    width: 968px;
+    margin: 0 auto;
+    font: 12px '宋体';
+    padding-bottom: 50px;
+    .EWM{
+        position: absolute;
+        top: 152px;
+        left: 50%;
+        margin: 0 0 0 -628px;
+    }
+    //logo   
+    .land_logo{
+        height: 112px;
+        .land_logo_img{
+            height: 57px;
+            margin-top: 31px;
+            a{
+                display: block;
+                height: 57px;
+                overflow: hidden;
+                width: 185px;
+                background: url(../image/welland.gif) 0 0 no-repeat;
+            }
+            span{
+                display: block;
+                height: 57px;
+                overflow: hidden;
+                width: 169px;
+                background:url(../image/welland.gif)  0 -58px no-repeat;
+            }
+        }
+        .kefuphonenum{
+            color: #525252;
+            padding-top: 70px;
+            a{
+                color: #0089cf;
+            }
+            strong {
+                font: 15px '微软雅黑';
+                color: #eb0007;
+                font-weight: normal;
+            }
+        }
+    }
+    .land_con {
+        border: 2px solid #ff8400;
+        width: 964px;
+        .land_con_l{
+            width: 532px;
+            padding-left: 133px;
+            color: #666666;
+            padding-top: 62px;
+            .land_item {
+                width: 351px;
+                height: 65px;
+                span {
+                    display: block;
+                    height: 12px;
+                    padding-bottom: 7px;
+                }
+                .item-ifo {
+                    position: relative;
+                    z-index: 1;
+                    .yhm_text {
+                        font: 13px Arial;
+                        color: #222;
+                        width: 315px;
+                        padding: 5px 25px 5px 10px;
+                        height: 25px;
+                        line-height: 25px;
+                        border: 1px solid #a2a2a2;
+                    }
+                    .land_ico{
+                        position: absolute;
+                        top: 8px;
+                        right: 9px;
+                        z-index: 10;
+                        width: 16px;
+                        height: 16px;
+                        background: url(../image/welland.gif) 0 -229px no-repeat;
+                        
+                    }
+                }
+            }
+            .land_item {
+                width: 351px;
+                height: 65px;
+                span {
+                    display: block;
+                    height: 12px;
+                    padding-bottom: 7px;
+                }
+                .item-ifo {
+                    position: relative;
+                    z-index: 1;
+                    .yhm_text {
+                        font: 13px Arial;
+                        color: #222;
+                        width: 315px;
+                        padding: 5px 25px 5px 10px;
+                        height: 25px;
+                        line-height: 25px;
+                        border: 1px solid #a2a2a2;
+                    }
+                    .land_ico2{
+                        position: absolute;
+                        top: 8px;
+                        right: 9px;
+                        z-index: 10;
+                        width: 16px;
+                        height: 19px;
+                        background: url(../image/welland.gif) 0 -251px no-repeat;
+                        
+                    }
+                }
+            }
+            .land_item2 {
+                width: 351px;
+                height: 31px;
+                .checkbox {
+                    display: block;
+                    width: 13px;
+                    height: 13px;
+                }
+                .mjy {
+                    height: 13px;
+                    line-height: 13px;
+                    display: block;
+                    margin-left: 6px;
+                }
+                .wjma{
+                    a{color: #0089cf;}
+                }   
+            }
+            .login-btn {
+                height: 37px;
+                margin-top: 10px;
+                .btn-img {
+                    width: 351px;
+                    height: 37px;
+                    background: url(../image/welland.gif) 0 -117px no-repeat;
+                    border: none;
+                    cursor: pointer;
+                }
+            }
+            .login_tips {
+                padding: 25px 0;
+                color: #888;
+                width: 351px;
+                line-height: 22px;
+                p {
+                    color: #666;
+                    font-weight: 600;
+                }
+            }
+
+        }
+        .land_con_r {
+            width: 217px;
+            background-color: #fff6ec;
+            height: 316px;
+            padding-left: 82px;
+            padding-top: 58px;
+            .land_item3 {
+                width: 219px;
+                height: 57px;
+                span {
+                    font: 14px '微软雅黑';
+                    color: #555555;
+                }
+                a {
+                    display: block;
+                    width: 142px;
+                    height: 32px;
+                    background: url(../image//welland.gif) 0 -155px no-repeat;
+                    line-height: 32px;
+                    text-align: center;
+                    color: #ff6000;
+                    margin-top: 10px;
+                }
+            }
+            .mg42 {
+                margin-top: 42px;
+            }
+        }
+
+    }
+}
+//底部
+.footer{
+    height: auto;
+    text-align: center;
+    padding: 0;
+    background: none;
+    font-family: "\5FAE\8F6F\96C5\9ED1",tahoma,arial,"\u5b8b\u4f53",sans-serif;
+    -webkit-font-smoothing: subpixel-antialiased !important;
+    padding-bottom: 90px;
+    border-top: 1px solid #e3e3e3;
+    .footer_con{
+        height: 100px;
+        background-color: #f6f6f6;
+        margin: 0 auto;
+        width: 1000px;
+    }
+    .footer_link{
+        margin: 0 auto;
+        width: 1000px;
+        .flist{
+            border-bottom: 1px solid #e6e6e6;
+            padding: 26px 0 26px 75px;
+            .flistdl{
+                float: left;
+                width: 95px;
+                height: 114px;
+                padding-left: 42px;
+                border-right: 1px dotted #e6e6e6;
+                text-align: left;
+                dt{
+                    color: #333;
+                    font-size: 16px;
+                    height: 26px;
+                    line-height: 26px;
+                    
+                }
+                dd{
+                    height: 22px;
+                    line-height: 22px;
+                    a{
+                        background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
+                    }
+                }
+            }
+            .flistdl2{
+                margin-left: 20px;
+                float: left;
+                dt{
+                    width: 80px;
+                    text-align: center;
+                    em{
+                        color: #999;
+                    }
+                }
+                dd{
+                    margin: 25px 0 0 25px;
+                }
+            }
+        }
+        .flist::after{
+            content: ".";
+            display: block;
+            height: 0;
+            clear: both;
+            visibility: hidden;
+        }
+    }
+    .footerinfo{
+        padding-top: 22px;
+        text-align: center;
+        .footer-list{
+            height: 26px;
+            color: #555;
+            a{
+                color: #555;
+                padding: 0 8px;
+                font-size: 13px;
+            }
+        }
+        .yqlink{
+            width: 960px;
+            margin: 0 auto;
+            .dlphh{
+                line-height: 22px;
+                height: 22px;
+                overflow: hidden;
+                text-align: left;
+                width: 900px;
+                em{
+                    padding-right: 8px;
+                    color: #666;
+                }
+                a{
+                    padding-right: 8px;
+                    color: #555;
+                }
+            }
+            .r_button{
+                width: 50px;
+                height: 22px;
+                line-height: 22px;
+                cursor: pointer;
+                color: #555;
+            }
+        }
+        .copyright{
+            color: #555;
+            line-height: 22px;
+        }
+        .copyright{
+            color: #555;
+            line-height: 22px;
+            a{
+                color: #555;
+                padding: 0 8px;
+                font-size: 13px;
+            }
+        }
+    }
+}

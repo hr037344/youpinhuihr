@@ -1,0 +1,46 @@
+.fr {
+  float: right; }
+
+.fl {
+  float: left; }
+
+a {
+  text-decoration: none;
+  color: #222;
+  outline: none; }
+
+.rel {
+  position: relative; }
+
+.clearfix:after {
+  clear: both;
+  content: '';
+  font-size: 0;
+  display: block;
+  visibility: hidden;
+  height: 0; }
+
+.l {
+  float: left; }
+
+.r {
+  float: right; }
+
+.webw {
+  margin: 0 auto;
+  width: 1140px; }
+
+.navul li.channel a.hover {
+  background-color: #bc0600; }
+
+.yg-phone span a.active {
+  color: #f70800; }
+
+.webz {
+  margin: 0 auto;
+  width: 1000px; }
+
+body {
+  font-family: "\5FAE\8F6F\96C5\9ED1",tahoma,arial,"\u5b8b\u4f53",sans-serif,Microsoft YaHei !important;
+  -webkit-font-smoothing: subpixel-antialiased !important;
+  font-size: 12px; }

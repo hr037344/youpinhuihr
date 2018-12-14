@@ -1,0 +1,1124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/details.css">
+    <link rel="stylesheet" href="../css/reset.css">
+</head>
+
+<body>
+    <!-- 顶部导航栏 -->
+    <div class="top_nav">
+        <div class="nav_con">
+            <div class="nav_notice">
+                <span>公告:</span>
+                <!-- <ul class="show_notice" style="margin-top: -19.5601px;"><li><a href="http://www.ugoshop.com/article-8162.html" target="_blank">【紧急通知】关于短信发送异常的公告</a></li><li><a href="http://www.ugoshop.com/article-7777.html" target="_blank">优品惠（优购物）5周年庆，盛大聚“惠”</a></li><li><a href="http://www.ugoshop.com/article-7691.html" target="_blank">【注意】自主语音订购说明</a></li><li><a href="http://www.ugoshop.com/article-11316.html" target="_blank">【公告】防诈骗提醒</a></li></ul> -->
+            </div>
+            <ul class="top-nav-tool clearfix" name="ajax_head" id="ajax_head">
+                <li class="yg-card"><span><a target="_blank" href="../register.html" id="__AD_head_zhuce" rel="nofollow">注册</a>
+                    </span>|</li>
+                <li class="yg-card"><span><a target="_blank" href="../login.html" id="__AD_head_denglu" rel="nofollow">登录</a>
+                    </span>|</li>
+                <li class="yg-card"><span><a target="_blank" href="http://www.ugoshop.com/user.php?act=order_list" id="__AD_head_dingdan"
+                            rel="nofollow">我的订单</a> </span>|</li>
+                <li class="yg-card"><span><a target="_blank" href="http://www.ugoshop.com/user.php?act=collection_list"
+                            id="__AD_head_guanzhu" rel="nofollow">我的关注</a> </span>|</li>
+                <li class="yg-card"><span><a target="_blank" href="http://info.ugoshop.com/" id="__AD_head_zixun">资讯</a>
+                    </span>|</li>
+                <li class="yg-card"><span><a target="_blank" href="http://www.ugoshop.com/brand_cate.php" id="__AD_head_pinpai">品牌馆</a>
+                    </span>|</li>
+                <li class="dh" id="wzdh"></li>
+                <li class="yg-phone"><span class="phone_in"><a href="http://www.ugoshop.com/app/" id="_AD_head_app"
+                            class=""><i class="t"><img src="http://www.ugoshop.com/themes/ugo/images/2015/2015_public/phone.png"
+                                    width="9" height="12" alt="手机优品惠" title="优品惠手机客户端二维码"></i>手机优品惠</a> </span>
+                    <div class="down_app" style="display:none;"> <i class="t"></i>
+                        <div class="app_erm"> <a href="http://www.ugoshop.com/app/"><img alt="" title="" src="http://www.ugoshop.com/themes/ugo/images/2015/2015_public/ewm90X90.jpg"
+                                    width="90" height="90"></a>
+                            <p><a href="http://www.ugoshop.com/app/">扫一扫哦~</a></p>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!-- logo区域 -->
+    <div class="header_logo">
+        <div class="logo_left">
+            <h2>
+                <a href="http://www.ugoshop.com">
+                    <img alt="优品惠" title="全球优品特卖优品惠" src="http://www.ugoshop.com/themes/ugo/images/2015/2015_public/logo.png"
+                        width="206" height="46">
+                </a>
+            </h2>
+            <p>
+                <a href="#">
+                    <img alt="" title="" src="http://www.ugoshop.com/themes/ugo/images/2015/2015_public/logom.jpg"
+                        width="206" height="30">
+                </a>
+            </p>
+        </div>
+        <div class="logo_search">
+            <div class="search_box">
+                <form target="_blank" method="get" action="/search.php" name="keyform">
+                    <div class="l">
+                        <input type="text" class="sch_in" id="sch_in" name="keywords" value="惠人原汁机" onfocus="if(this.value!=''){this.value=''};"
+                            onblur="if(this.value==''||this.value=='请输入商品名称或货号'){this.value='请输入商品名称或货号';}">
+                    </div>
+                    <div class="r">
+                        <input type="button" class="sch_btn" onclick="document.keyform.submit()">
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="logo_empty"></div>
+        <div class="mycart">
+            <div class="cart_bag">
+                <div class="bag_con">
+                    <i class="con_l">
+                        <img src="http://www.ugoshop.com/themes/ugo/images/2015/2015_public/gwc.png" width="19" height="18"
+                            alt="优品惠购物车" title="UGO优品惠购物车">
+                    </i>
+                    <i class="con_r"></i>
+                    <a href="http://www.ugoshop.com/flow/cart/?tp=HomePage.1">我的购物车</a>
+                    <span class="cartnum">0</span>
+                </div>
+            </div>
+            <div class="cart-info" style="display: none;">
+                <!--购物车没有商品 s-->
+                <!--<p class="none_cart">购物车还没有商品，快去挑选吧~</p>-->
+                <!--购物车没有商品 e-->
+                <!--购物车有商品 s-->
+                <div class="carlist" id="cartlist">
+                    <p class="none_cart">购物车还没有商品，快去挑选吧~</p>
+                </div>
+                <!-- 购物车有商品 e-->
+            </div>
+        </div>
+    </div>
+    <!-- 详细导航 -->
+    <div class="main_nav">
+        <div class="main_con">
+            <ul class="navul">
+                <li class="channel">
+                    <a target="_self" href="http://www.ugoshop.com" class="hover">首页</a>
+                </li>
+                <li class="channel">
+                    <a target="_self" href="http://www.ugoshop.com/tvList/" class="a-tvicon">视频</a>
+                </li>
+                <li class="channel">
+                    <a target="_self" href="http://www.ugoshop.com/global.html">食品</a>
+                </li>
+                <li class="channel">
+                    <a target="_self" href="http://www.ugoshop.com/life.html">家居</a>
+                </li>
+                <li class="channel">
+                    <a target="_self" href="http://www.ugoshop.com/free.html">美妆</a>
+                </li>
+                <li class="channel">
+                    <a target="_self" href="http://www.ugoshop.com/fashion.html">服饰</a>
+                </li>
+                <li class="channel">
+                    <a target="_self" href="http://www.ugoshop.com/original.html">音乐之声</a>
+                </li>
+                <li class="navcart">
+                    <dl class="alnav">
+                        <dt class="sysp">
+                            <p>所有商品分类</p>
+                        </dt>
+                        <dd class="qb_fl">
+                            <div class="fl_list">
+                                <div class="list_box">
+                                    <div class="kinds">
+                                        <div class="kinds_top">
+                                            <div class="stat">
+                                                <img width="30" height="42" alt="" src="http://www.ugoshop.com/themes/ugo/images/2013_v1/classify/qbdh/newsix_03.png">
+                                            </div>
+                                            <div class="stat_hover">
+                                                <img width="38" height="40" alt="" src="http://www.ugoshop.com/themes/ugo/images/2013_v1/classify/qbdh/sixhover_03.png">
+                                            </div>
+                                            <a target="_blank" href="http://www.ugoshop.com/ch22/">品质厨房</a>
+                                        </div>
+                                        <div class="kinds_bot">
+                                            <a target="_blank" href="http://www.ugoshop.com/ch22-sub208/" data-ref="null_categoryBrowse"
+                                                onclick="addTrackPositionToCookie(this,null,null,'208','Browse',null);">烹饪厨具</a>
+                                            <a target="_blank" href="http://www.ugoshop.com/ch22-sub403/" data-ref="null_categoryBrowse"
+                                                onclick="addTrackPositionToCookie(this,null,null,'403','Browse',null);">厨房电器</a>
+                                            <a target="_blank" href="http://www.ugoshop.com/ch22-sub1265/" data-ref="null_categoryBrowse"
+                                                onclick="addTrackPositionToCookie(this,null,null,'1265','Browse',null);">餐饮用具</a>
+                                            <a target="_blank" href="http://www.ugoshop.com/ch22-sub207/" data-ref="null_categoryBrowse"
+                                                onclick="addTrackPositionToCookie(this,null,null,'207','Browse',null);">厨房配件</a>
+                                        </div>
+                                    </div>
+                                    <div class="kinds">
+                                        <div class="kinds_top">
+                                            <div class="stat">
+                                                <img width="30" height="42" alt="" src="http://www.ugoshop.com/themes/ugo/images/2013_v1/classify/qbdh/newsix_05.png">
+                                            </div>
+                                            <div class="stat_hover">
+                                                <img width="38" height="40" alt="" src="http://www.ugoshop.com/themes/ugo/images/2013_v1/classify/qbdh/sixhover_05.png">
+                                            </div>
+                                            <a target="_blank" id="__AD_shouye_daohang3_2" href="http://www.ugoshop.com/ch92/"
+                                                data-ref="null_categoryBrowse" onclick="addTrackPositionToCookie(this,null,null,'92','Browse',null);">美食•民生</a>
+                                        </div>
+                                        <div class="kinds_bot">
+                                            <a target="_blank" href="http://www.ugoshop.com/ch92-sub93/" data-ref="null_categoryBrowse"
+                                                onclick="addTrackPositionToCookie(this,null,null,'93','Browse',null);">进口食品</a>
+                                            <a target="_blank" href="http://www.ugoshop.com/ch92-sub829/" data-ref="null_categoryBrowse"
+                                                onclick="addTrackPositionToCookie(this,null,null,'829','Browse',null);">营养保健</a>
+                                            <a target="_blank" href="http://www.ugoshop.com/ch92-sub364/" data-ref="null_categoryBrowse"
+                                                onclick="addTrackPositionToCookie(this,null,null,'364','Browse',null);">休闲食品</a>
+                                            <a target="_blank" href="http://www.ugoshop.com/ch92-sub959/" data-ref="null_categoryBrowse"
+                                                onclick="addTrackPositionToCookie(this,null,null,'959','Browse',null);">粮油干货</a>
+                                            <a target="_blank" href="http://www.ugoshop.com/ch92-sub822/" data-ref="null_categoryBrowse"
+                                                onclick="addTrackPositionToCookie(this,null,null,'822','Browse',null);">酒水茶饮</a>
+                                            <a target="_blank" href="http://www.ugoshop.com/ch92-sub1245/" data-ref="null_categoryBrowse"
+                                                onclick="addTrackPositionToCookie(this,null,null,'1245','Browse',null);">生鲜食品</a>
+                                        </div>
+                                    </div>
+                                    <div class="kinds">
+                                        <div class="kinds_top">
+                                            <div class="stat">
+                                                <img width="30" height="42" alt="" src="http://www.ugoshop.com/themes/ugo/images/2013_v1/classify/qbdh/newsix_07.png">
+                                            </div>
+                                            <div class="stat_hover">
+                                                <img width="38" height="40" alt="" src="http://www.ugoshop.com/themes/ugo/images/2013_v1/classify/qbdh/sixhover_07.png">
+                                            </div>
+                                            <a target="_blank" id="__AD_shouye_daohang3_3" href="http://www.ugoshop.com/ch1/"
+                                                data-ref="null_categoryBrowse" onclick="addTrackPositionToCookie(this,null,null,'1','Browse',null);">健康生活</a>
+                                        </div>
+                                        <div class="kinds_bot">
+                                            <a target="_blank" href="http://www.ugoshop.com/ch1-sub192/" data-ref="null_categoryBrowse"
+                                                onclick="addTrackPositionToCookie(this,null,null,'192','Browse',null);">优质睡眠</a>
+                                            <a target="_blank" href="http://www.ugoshop.com/ch1-sub1057/" data-ref="null_categoryBrowse"
+                                                onclick="addTrackPositionToCookie(this,null,null,'1057','Browse',null);">收纳用品</a>
+                                            <a target="_blank" href="http://www.ugoshop.com/ch1-sub1305/" data-ref="null_categoryBrowse"
+                                                onclick="addTrackPositionToCookie(this,null,null,'1305','Browse',null);">生活日用</a>
+                                            <a target="_blank" href="http://www.ugoshop.com/ch1-sub1059/" data-ref="null_categoryBrowse"
+                                                onclick="addTrackPositionToCookie(this,null,null,'1059','Browse',null);">生活电器</a>
+                                            <a target="_blank" href="http://www.ugoshop.com/ch1-sub1121/" data-ref="null_categoryBrowse"
+                                                onclick="addTrackPositionToCookie(this,null,null,'1121','Browse',null);">装饰/家具</a>
+                                            <a target="_blank" href="http://www.ugoshop.com/ch1-sub952/" data-ref="null_categoryBrowse"
+                                                onclick="addTrackPositionToCookie(this,null,null,'952','Browse',null);">健身/户外</a>
+                                            <a target="_blank" href="http://www.ugoshop.com/ch1-sub160/" data-ref="null_categoryBrowse"
+                                                onclick="addTrackPositionToCookie(this,null,null,'160','Browse',null);">医疗器械</a>
+                                        </div>
+                                    </div>
+                                    <div class="kinds">
+                                        <div class="kinds_top">
+                                            <div class="stat">
+                                                <img width="30" height="42" alt="" src="http://www.ugoshop.com/themes/ugo/images/2013_v1/classify/qbdh/newsix_09.png">
+                                            </div>
+                                            <div class="stat_hover">
+                                                <img width="38" height="40" alt="" src="http://www.ugoshop.com/themes/ugo/images/2013_v1/classify/qbdh/sixhover_09.png">
+                                            </div>
+                                            <a target="_blank" id="__AD_shouye_daohang3_4" href="http://www.ugoshop.com/ch257/"
+                                                data-ref="null_categoryBrowse" onclick="addTrackPositionToCookie(this,null,null,'257','Browse',null);">魅力穿戴</a>
+                                        </div>
+                                        <div class="kinds_bot">
+                                            <a target="_blank" href="http://www.ugoshop.com/ch257-sub260/" data-ref="null_categoryBrowse"
+                                                onclick="addTrackPositionToCookie(this,null,null,'260','Browse',null);">女装</a>
+                                            <a target="_blank" href="http://www.ugoshop.com/ch257-sub689/" data-ref="null_categoryBrowse"
+                                                onclick="addTrackPositionToCookie(this,null,null,'689','Browse',null);">男装</a>
+                                            <a target="_blank" href="http://www.ugoshop.com/ch257-sub353/" data-ref="null_categoryBrowse"
+                                                onclick="addTrackPositionToCookie(this,null,null,'353','Browse',null);">内衣</a>
+                                            <a target="_blank" href="http://www.ugoshop.com/ch257-sub1005/" data-ref="null_categoryBrowse"
+                                                onclick="addTrackPositionToCookie(this,null,null,'1005','Browse',null);">箱包</a>
+                                            <a target="_blank" href="http://www.ugoshop.com/ch257-sub638/" data-ref="null_categoryBrowse"
+                                                onclick="addTrackPositionToCookie(this,null,null,'638','Browse',null);">鞋靴</a>
+                                            <a target="_blank" href="http://www.ugoshop.com/ch257-sub282/" data-ref="null_categoryBrowse"
+                                                onclick="addTrackPositionToCookie(this,null,null,'282','Browse',null);">配饰</a>
+                                            <a target="_blank" href="http://www.ugoshop.com/ch257-sub1254/" data-ref="null_categoryBrowse"
+                                                onclick="addTrackPositionToCookie(this,null,null,'1254','Browse',null);">户外鞋服</a>
+                                        </div>
+                                    </div>
+                                    <div class="kinds">
+                                        <div class="kinds_top">
+                                            <div class="stat">
+                                                <img width="30" height="42" alt="" src="http://www.ugoshop.com/themes/ugo/images/2013_v1/classify/qbdh/newsix_13.png">
+                                            </div>
+                                            <div class="stat_hover">
+                                                <img width="38" height="40" alt="" src="http://www.ugoshop.com/themes/ugo/images/2013_v1/classify/qbdh/sixhover_13.png">
+                                            </div>
+                                            <a target="_blank" id="__AD_shouye_daohang3_6" href="http://www.ugoshop.com/ch281/"
+                                                data-ref="null_categoryBrowse" onclick="addTrackPositionToCookie(this,null,null,'281','Browse',null);">珠宝收藏</a>
+                                        </div>
+                                        <div class="kinds_bot">
+                                            <a target="_blank" href="http://www.ugoshop.com/ch281-sub517/" data-ref="null_categoryBrowse"
+                                                onclick="addTrackPositionToCookie(this,null,null,'517','Browse',null);">翡翠玉石</a>
+                                            <a target="_blank" href="http://www.ugoshop.com/ch281-sub680/" data-ref="null_categoryBrowse"
+                                                onclick="addTrackPositionToCookie(this,null,null,'680','Browse',null);">宝石珍珠</a>
+                                            <a target="_blank" href="http://www.ugoshop.com/ch281-sub527/" data-ref="null_categoryBrowse"
+                                                onclick="addTrackPositionToCookie(this,null,null,'527','Browse',null);">水晶玛瑙</a>
+                                            <a target="_blank" href="http://www.ugoshop.com/ch281-sub535/" data-ref="null_categoryBrowse"
+                                                onclick="addTrackPositionToCookie(this,null,null,'535','Browse',null);">时尚饰品</a>
+                                            <a target="_blank" href="http://www.ugoshop.com/ch281-sub1053/" data-ref="null_categoryBrowse"
+                                                onclick="addTrackPositionToCookie(this,null,null,'1053','Browse',null);">钟表</a>
+                                            <a target="_blank" href="http://www.ugoshop.com/ch281-sub1025/" data-ref="null_categoryBrowse"
+                                                onclick="addTrackPositionToCookie(this,null,null,'1025','Browse',null);">文化收藏</a>
+                                        </div>
+                                    </div>
+                                    <div class="kinds">
+                                        <div class="kinds_top">
+                                            <div class="stat">
+                                                <img width="30" height="42" alt="" src="http://www.ugoshop.com/themes/ugo/images/2013_v1/classify/qbdh/newsix_11.png">
+                                            </div>
+                                            <div class="stat_hover">
+                                                <img width="38" height="40" alt="" src="http://www.ugoshop.com/themes/ugo/images/2013_v1/classify/qbdh/sixhover_11.png">
+                                            </div>
+                                            <a target="_blank" id="__AD_shouye_daohang3_5" href="http://www.ugoshop.com/ch58/"
+                                                data-ref="null_categoryBrowse" onclick="addTrackPositionToCookie(this,null,null,'58','Browse',null);">美肤靓妆</a>
+                                        </div>
+                                        <div class="kinds_bot">
+                                            <a target="_blank" href="http://www.ugoshop.com/ch58-sub247/" data-ref="null_categoryBrowse"
+                                                onclick="addTrackPositionToCookie(this,null,null,'247','Browse',null);">面部护理</a>
+                                            <a target="_blank" href="http://www.ugoshop.com/ch58-sub170/" data-ref="null_categoryBrowse"
+                                                onclick="addTrackPositionToCookie(this,null,null,'170','Browse',null);">洗护护理</a>
+                                            <a target="_blank" href="http://www.ugoshop.com/ch58-sub843/" data-ref="null_categoryBrowse"
+                                                onclick="addTrackPositionToCookie(this,null,null,'843','Browse',null);">美容仪器</a>
+                                            <a target="_blank" href="http://www.ugoshop.com/ch58-sub972/" data-ref="null_categoryBrowse"
+                                                onclick="addTrackPositionToCookie(this,null,null,'972','Browse',null);">身体护理</a>
+                                            <a target="_blank" href="http://www.ugoshop.com/ch58-sub171/" data-ref="null_categoryBrowse"
+                                                onclick="addTrackPositionToCookie(this,null,null,'171','Browse',null);">彩妆香水</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </dd>
+                    </dl>
+
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!-- 中心区域 -->
+    <div class="webz">
+        <div class="sh-crumbs">
+            当前位置：
+            <a href="http://www.ugoshop.com" title="">首页</a>
+            <code>&gt;</code>
+            <a href="http://www.ugoshop.com/ch92/" title="美食">美食</a>
+            <code>&gt;</code>
+            <a href="http://www.ugoshop.com/ch92-sub829/" title="营养保健">营养保健</a>
+            <code>&gt;</code>
+            <a href="http://www.ugoshop.com/ch92-sub829-cag833/" title="基础营养">基础营养</a>
+            <code>&gt;</code> 跨境品德国双心天然桉树油润肺胶囊 </div>
+        <!-- 商品图/参数区域 -->
+        <div class="sh-goods-key clearfix">
+            <div class="sh-goods-gallery">
+                <div id="preview" class="preview">
+                    <span class="jqzoom"><img id="addCartImg" jqimg="http://img.ugoshop.com/images/201810/1539104733175328089.jpg"
+                            src="http://img.ugoshop.com/images/201810/1539104733101395622.jpg" alt=""></span>
+                    <i class="lens"><a href="http://img.ugoshop.com/images/201810/1539104733175328089.jpg" target="_blank"></a></i>
+                    <div class="sale-out"></div>
+                    <div class="hdlog t"><img src="http://img.ugoshop.com//images/201812/1544141242482706077.png?1544170042"
+                            width="80" height="80"></div>
+                </div>
+                <div class="jqzoom-scroll clearfix">
+                    <a class="prev disabled"></a>
+                    <a class="next"></a>
+                    <div class="items">
+                        <ul>
+                            <li class="active">
+                                <img alt="跨境品德国双心天然桉树油润肺胶囊" title="优品惠跨境品德国双心天然桉树油润肺胶囊" bimg="http://img.ugoshop.com/images/201810/1539104733175328089.jpg"
+                                    src="http://img.ugoshop.com/images/201810/1539104733101395622.jpg">
+                            </li>
+                            <li>
+                                <img alt="跨境品德国双心天然桉树油润肺胶囊" title="优品惠跨境品德国双心天然桉树油润肺胶囊" bimg="http://img.ugoshop.com/images/201810/1539104721166345049.jpg"
+                                    src="http://img.ugoshop.com/images/201810/1539104721373983021.jpg">
+                            </li>
+                            <li>
+                                <img alt="跨境品德国双心天然桉树油润肺胶囊" title="优品惠跨境品德国双心天然桉树油润肺胶囊" bimg="http://img.ugoshop.com/images/201810/1539104743169623949.jpg"
+                                    src="http://img.ugoshop.com/images/201810/1539104743988491502.jpg">
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="sh-goods-share clearfix">
+                    <input type="hidden" id="goods_id" value="138731">
+                    <input type="hidden" id="goods_cid" value="833">
+                    <input type="hidden" id="first_cat" value="美食">
+                    <div class="no">商品货号：577455_001</div>
+                    <div class="baidu-share">
+                        <!-- Baidu Button BEGIN -->
+                        <div id="bdshare" class="share bdshare_t bds_tools get-codes-bdshare">
+                            <span class="bds_more"><i></i>分享</span>
+                        </div>
+                        <script type="text/javascript" id="bdshare_js" data="type=tools&amp;uid=1384731" src="http://bdimg.share.baidu.com/static/js/bds_s_v2.js?cdnversion=429099"></script>
+
+                        <script type="text/javascript">
+                            document.getElementById("bdshell_js").src = "http://bdimg.share.baidu.com/static/js/shell_v2.js?cdnversion=" + Math.ceil(new Date() / 3600000)
+                        </script>
+                        <!-- Baidu Button END -->
+                        <div class="concerns">
+                            <span class="concerns-text already" id="concerns">
+                                <i></i><span id="concernsinfo" onclick="javascript:collect(138731);">已关注</span>
+                            </span>
+                            <span class="tip concerns-tip" id="concerns-tip" style="display:none">
+                                关注成功！<a href="/user.php?act=collection_list" target="_blank">去我的关注查看</a>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="sh-goods-parameters">
+                <i class="sale-mode zg"></i>
+                <form action="#">
+                    <div class="brand clearfix">
+                        <span class="country-flag ">
+                            <img src="http://img3.ugoshop.com/flags/m/304.png" alt="" title="">
+                            <span>德国</span>
+                            <span class="split">|</span>
+                        </span>
+                        <span class="country-brand">
+                            <a target="_blank" alt="Doppel herz双心" title="优品惠Doppel herz双心" href="/brand_5269.html?tp=DetailPage.1">Doppel
+                                herz双心</a>
+                        </span>
+                    </div>
+                    <h1 class="title">
+                        跨境品德国双心天然桉树油润肺胶囊 </h1>
+                    <div class="description">
+                        桉树油含氧率高是非常好的呼吸系统理疗油，对气喘、流行性感冒、上呼吸道感染、淋巴腺感染等极具功效。能缓和发炎现象，对发烧也有效果，可降低体温，改善偏头痛。抵抗病毒的同时预防感冒。 </div>
+                    <div class="price-box">
+                        <ul class="a-good-infos">
+                            <li class="mb">
+                                <span class="label price-label" data-attr="3" data-attrh="1">价格</span>
+                                <span class="price" alt="299" id="rel_price"><i>￥</i>299</span> </li>
+                            <li><span class="label">优惠</span>
+                                <div>
+                                    <p><span class="tag">包邮</span><span>本商品单件包邮</span></p>
+                                </div>
+                            </li>
+                        </ul>
+                        
+                    </div>
+                    <div class="choice-buy">
+                        <input type="hidden" name="prodJson" value="{&quot;color0_style0&quot;:577455101}">
+                        <dl class="sendto clearfix">
+                            <dt>送至</dt>
+                            <input type="hidden" id="default_adder_id" value="">
+                            <dd class="clearfix">
+                                <div class="store-select"> <span class="text">北京北京东城区</span><i class="store-a"></i>
+                                    <div class="content" style="display: none;">
+                                        <ul class="mt">
+                                            <li class=""><a href="#none"><em>北京</em><i></i></a></li>
+                                            <li style=""><a href="#none"><em>北京</em><i></i></a></li>
+                                            <li style="" class="curr"><a href="#none"><em>东城区</em><i></i></a></li>
+                                        </ul>
+                                        <div class="tab-content" id="stock_province_item" style="display: none;">
+                                            <ul>
+                                                <li class=""><a data-value="2" href="#none" parent_id="1" class="curr">北京</a></li>
+                                                <li class=""><a data-value="3" href="#none" parent_id="1" class="">安徽</a></li>
+                                                <li class=""><a data-value="4" href="#none" parent_id="1" class="">福建</a></li>
+                                                <li class=""><a data-value="5" href="#none" parent_id="1" class="">甘肃</a></li>
+                                                <li class=""><a data-value="6" href="#none" parent_id="1" class="">广东</a></li>
+                                                <li class=""><a data-value="7" href="#none" parent_id="1" class="">广西</a></li>
+                                                <li class=""><a data-value="8" href="#none" parent_id="1" class="">贵州</a></li>
+                                                <li class=""><a data-value="9" href="#none" parent_id="1" class="">海南</a></li>
+                                                <li class=""><a data-value="10" href="#none" parent_id="1" class="">河北</a></li>
+                                                <li class=""><a data-value="11" href="#none" parent_id="1" class="">河南</a></li>
+                                                <li class=""><a data-value="13" href="#none" parent_id="1" class="">湖北</a></li>
+                                                <li class=""><a data-value="14" href="#none" parent_id="1" class="">湖南</a></li>
+                                                <li class=""><a data-value="15" href="#none" parent_id="1" class="">吉林</a></li>
+                                                <li class=""><a data-value="16" href="#none" parent_id="1" class="">江苏</a></li>
+                                                <li class=""><a data-value="17" href="#none" parent_id="1" class="">江西</a></li>
+                                                <li class=""><a data-value="18" href="#none" parent_id="1" class="">辽宁</a></li>
+                                                <li class=""><a data-value="20" href="#none" parent_id="1" class="">宁夏</a></li>
+                                                <li class=""><a data-value="21" href="#none" parent_id="1" class="">青海</a></li>
+                                                <li class=""><a data-value="22" href="#none" parent_id="1" class="">山东</a></li>
+                                                <li class=""><a data-value="23" href="#none" parent_id="1" class="">山西</a></li>
+                                                <li class=""><a data-value="24" href="#none" parent_id="1" class="">陕西</a></li>
+                                                <li class=""><a data-value="25" href="#none" parent_id="1" class="">上海</a></li>
+                                                <li class=""><a data-value="26" href="#none" parent_id="1" class="">四川</a></li>
+                                                <li class=""><a data-value="27" href="#none" parent_id="1" class="">天津</a></li>
+                                                <li class=""><a data-value="28" href="#none" parent_id="1" class="">西藏</a></li>
+                                                <li class=""><a data-value="29" href="#none" parent_id="1" class="">新疆</a></li>
+                                                <li class=""><a data-value="30" href="#none" parent_id="1" class="">云南</a></li>
+                                                <li class=""><a data-value="31" href="#none" parent_id="1" class="">浙江</a></li>
+                                                <li class=""><a data-value="32" href="#none" parent_id="1" class="">重庆</a></li>
+                                                <li class=""><a data-value="33" href="#none" parent_id="1" class="">香港</a></li>
+                                                <li class=""><a data-value="34" href="#none" parent_id="1" class="">澳门</a></li>
+                                                <li class=""><a data-value="35" href="#none" parent_id="1" class="">台湾</a></li>
+                                                <li class=""><a data-value="12" href="#none" parent_id="1" class="">黑龙江</a></li>
+                                                <li class=""><a data-value="19" href="#none" parent_id="1" class="">内蒙古</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="tab-content" id="stock_city_item" style="display: none;">
+                                            <ul>
+                                                <li class=""><a data-value="52" href="#none" parent_id="2" class="curr">北京</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="tab-content" id="stock_area_item" style="display: block;">
+                                            <ul>
+                                                <li class=""><a data-value="500" href="#none" parent_id="52" class="curr">东城区</a></li>
+                                                <li class=""><a data-value="501" href="#none" parent_id="52" class="">西城区</a></li>
+                                                <li class=""><a data-value="502" href="#none" parent_id="52" class="">海淀区</a></li>
+                                                <li class=""><a data-value="503" href="#none" parent_id="52" class="">朝阳区</a></li>
+                                                <li class=""><a data-value="504" href="#none" parent_id="52" class="">崇文区</a></li>
+                                                <li class=""><a data-value="505" href="#none" parent_id="52" class="">宣武区</a></li>
+                                                <li class=""><a data-value="506" href="#none" parent_id="52" class="">丰台区</a></li>
+                                                <li class=""><a data-value="508" href="#none" parent_id="52" class="">房山区</a></li>
+                                                <li class=""><a data-value="510" href="#none" parent_id="52" class="">通州区</a></li>
+                                                <li class=""><a data-value="511" href="#none" parent_id="52" class="">顺义区</a></li>
+                                                <li class=""><a data-value="512" href="#none" parent_id="52" class="">昌平区</a></li>
+                                                <li class=""><a data-value="513" href="#none" parent_id="52" class="">怀柔区</a></li>
+                                                <li class=""><a data-value="514" href="#none" parent_id="52" class="">平谷区</a></li>
+                                                <li class=""><a data-value="515" href="#none" parent_id="52" class="">大兴区</a></li>
+                                                <li class=""><a data-value="516" href="#none" parent_id="52" class="">密云县</a></li>
+                                                <li class=""><a data-value="517" href="#none" parent_id="52" class="">延庆县</a></li>
+                                                <li class="col4"><a data-value="507" href="#none" parent_id="52" class="">石景山区</a></li>
+                                                <li class="col4"><a data-value="509" href="#none" parent_id="52" class="">门头沟区</a></li>
+                                            </ul>
+                                        </div>
+                                        <i class="cls"></i>
+                                    </div>
+                                </div>
+                                <div class="xdljfa">
+                                    <span style="display: block;"><em>有货</em></span>
+                                </div>
+                            </dd>
+                        </dl>
+                        <dl class="color clearfix" style="display:none;">
+                            <dt>颜色</dt>
+                            <dd id="color">
+                                <a href="http://www.ugoshop.com/goods-138731.html" target="_self">
+                                    <span id="color0" alt="共同" class="select"><i></i><img alt="共同" title="共同" src="http://img.ugoshop.com/images/201810/1539104733862666839.jpg"></span>
+                                </a>
+                            </dd>
+                        </dl>
+                        <dl class="size clearfix" style="display:none;">
+                            <dt>
+                                规格 </dt>
+                            <dd id="size">
+                                <span id="style0" pid="共同" class="select" alt="共同"><i></i>共同</span>
+                            </dd>
+                        </dl>
+
+                        <dl class="number clearfix">
+                            <dt>数量</dt>
+                            <dd id="goodsNumber">
+                                <div class="box">
+                                    <a href="javascript:;" id="lessBtn" class="limit">-</a>
+                                    <input class="l" id="goodsNumberInput" type="text" value="1">
+                                    <a href="javascript:;" id="addBtn">+</a>
+                                </div>
+                                <!--<span class="err-info"><i></i>限购6件</span>-->
+                            </dd>
+                        </dl>
+                    </div>
+                    <div class="add-cart">
+                        <button type="button" class="sh-shopping-cart" data-name="addCartTrigger" data-trigger-status="open"
+                            data-thum="/themes/ugo/images/2016/2016_goods/demo/zoom-sm-1.jpg"><i></i>加入购物车</button>
+                        <p class="merchant_zg"><span>商家直营</span> 此商品由
+                            <span class="mz_zg">
+                                <a href="javascript:void(0);">优品惠精选商家</a>
+                                <span class="info-window" style="display: none;">
+                                    <span class="ul">
+                                        <i class="li">店铺名称：</i>
+                                        <b class="li">优品惠精选商家</b>
+                                    </span>
+                                    <span class="ul">
+                                        <i class="li">公司信息：</i>
+                                        <b class="li">宁波德联进出口有限公司</b>
+                                    </span>
+                                </span>
+                            </span>
+                            发货，并提供售后服务</p>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="sh-goods-similar similar-header" style="display:none;">
+        </div>
+        <div class="sh-goods-declaration">
+            <img class="lazy-loading" src="../image/declaration.jpg" data-original="../image/declaration.jpg"
+                style="display: block;">
+        </div>
+        <div class="sh-goods-details clearfix">
+            <!-- 商品tab组/同类 -->
+            <div class="group">
+                <div class="related">
+                    <div class="tab clearfix">
+                        <div class="tab-select">
+                            <a class="active" href="#details" title="" data-scorll="details">商品详情</a>
+                            <a href="#comments" title="" data-scorll="comments">评论 <span id="flcomments">(33)</span></a>
+                            <a href="#services" title="" data-scorll="services">服务说明</a>
+                        </div>
+                        <div class="ext" style="display: none;">
+                            <div class="options">
+                                <span id="ext_color"></span>
+                                <span id="ext_size"></span>
+                            </div>
+                            <div class="ext-cart-info">
+                                <span id="ext_num">数量：1</span>
+                                <span class="price" id="ext_price"><i>￥</i>299</span>
+                                <button class="sh-shopping-cart" data-name="addCartTrigger" data-trigger-status="open"
+                                    data-thum="/themes/ugo/images/2016/2016_goods/demo/zoom-sm-1.jpg"><i></i>加入购物车</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="details" id="details" style="margin-top: 0px;">
+                        <h3 class="title"></h3>
+                        <ul class="details-table sh-goods-block">
+                            <li class="row clearfix">
+                                <div class="title text-left"><span>品牌</span></div>
+                                <div class="details">Doppel herz双心</div>
+                            </li>
+                            <li class="row clearfix">
+                                <div class="title"><span>商品名称</span></div>
+                                <div class="details">跨境品德国双心天然桉树油润肺胶囊</div>
+                            </li>
+                        </ul><img src="http://img.ugoshop.com/oversea/meizhuang_jiashuilv.jpg">
+                        <div class="pic sh-goods-block">
+                            <p><img class="lazy-loading" src="http://img3.ugoshop.com/images/201810/1539105341648971246.jpg"
+                                    data-original="http://img3.ugoshop.com/images/201810/1539105341648971246.jpg" style="display: block;"></p>
+                            <p><img class="lazy-loading" src="/themes/ugo/images/2015/2015_public/grey.png"
+                                    data-original="http://img3.ugoshop.com/images/201810/1539105341467908360.jpg"></p>
+                            <p><img class="lazy-loading" src="/themes/ugo/images/2015/2015_public/grey.png"
+                                    data-original="http://img.ugoshop.com/images/201810/1539105341165215064.jpg"></p>
+                            <p><img class="lazy-loading" src="/themes/ugo/images/2015/2015_public/grey.png"
+                                    data-original="http://img.ugoshop.com/images/201810/1539105341553108445.jpg"></p>
+                            <p><img class="lazy-loading" src="/themes/ugo/images/2015/2015_public/grey.png"
+                                    data-original="http://img2.ugoshop.com/images/201810/1539105341731956479.jpg"></p>
+                            <p><img class="lazy-loading" src="/themes/ugo/images/2015/2015_public/grey.png"
+                                    data-original="http://img4.ugoshop.com/images/201810/1539105341807691763.jpg"></p>
+                            <p><img class="lazy-loading" src="/themes/ugo/images/2015/2015_public/grey.png"
+                                    data-original="http://img6.ugoshop.com/images/201810/1539105341956928533.jpg"></p>
+                            <p><img class="lazy-loading" src="/themes/ugo/images/2015/2015_public/grey.png"
+                                    data-original="http://img2.ugoshop.com/images/201810/1539105342443439140.jpg"></p>
+                            <p><br></p>
+                        </div><img class="price_explain" src="http://img.ugoshop.com/images/price_explain.jpg">
+                    </div>
+                    <div class="comment clearfix" id="comments">
+                        <h3 class="title"></h3>
+                        <div class="comment-box">
+                            <div class="inner-header clearfix">
+                                <div class="select-comment">
+                                    <ul>
+                                        <li>
+                                            <div class="custom-radio"><input type="radio" checked="checked" name="comment"
+                                                    value="all" id="all"><label for="all" class="checked"><i></i><span
+                                                        id="allifno">全部评论(33)</span></label></div>
+
+                                        </li>
+                                        <li>
+                                            <div class="custom-radio"><input type="radio" name="comment" value="good"
+                                                    id="good"><label for="good"><i></i><span id="goodifno">好评(33)</span></label></div>
+
+                                        </li>
+                                        <li>
+                                            <div class="custom-radio"><input type="radio" name="comment" value="general"
+                                                    id="general"><label for="general"><i></i><span id="genifno">中评(0)</span></label></div>
+
+                                        </li>
+                                        <li>
+                                            <div class="custom-radio"><input type="radio" name="comment" value="bad" id="bad"><label
+                                                    for="bad"><i></i><span id="badifno">差评(0)</span></label></div>
+
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="show-pic">
+                                    <div class="custom-checkbox"><input type="checkbox" id="is-show-pic" value="show_pic"
+                                            name="is-show-pic"><label for="is-show-pic"><i></i><span>有晒图</span></label></div>
+
+                                </div>
+                            </div>
+                            <div class="comment-box-list">
+                                <ul class="comment-list" id="goods_comment">
+                                    <li class="clearfix">
+                                        <div class="descrption">
+                                            <p class="text">
+                                                的确不错，再买一套继续吃，效果还是不错的。
+                                            </p>
+                                            <ul class="clearfix"></ul>
+                                            <p class="datetime">2018-12-14 02:15:07</p>
+                                        </div>
+                                        <div class="attr">
+                                            <p>
+                                                &nbsp;
+                                            </p>
+                                            <p>
+                                                &nbsp;
+                                            </p>
+                                        </div>
+                                        <div class="author">
+                                            <span>156****8997</span>
+                                            <i class="comment-star comment-star-5"></i>
+                                        </div>
+                                    </li>
+                                    <li class="clearfix">
+                                        <div class="descrption">
+                                            <p class="text">
+                                                第一次买这个产品，吃了好的话，下次还会买的。
+                                            </p>
+                                            <ul class="clearfix"></ul>
+                                            <p class="datetime">2018-12-12 15:46:43</p>
+                                        </div>
+                                        <div class="attr">
+                                            <p>
+                                                &nbsp;
+                                            </p>
+                                            <p>
+                                                &nbsp;
+                                            </p>
+                                        </div>
+                                        <div class="author">
+                                            <span>135****0651</span>
+                                            <i class="comment-star comment-star-5"></i>
+                                        </div>
+                                    </li>
+                                    <li class="clearfix">
+                                        <div class="descrption">
+                                            <p class="text">
+                                                刚刚收到，当即货到付款成功。感觉贵了点，但愿物有所值，效果好。其他就无所谓啦！
+                                            </p>
+                                            <ul class="clearfix">
+                                                <li><i class="triangle-down"></i><img src="http://img5.ugoshop.com/ugoimg/imgFile/201812/1544504736300.png"
+                                                        data-src="http://img4.ugoshop.com/ugoimg/imgFile/201812/1544504736300.png"
+                                                        alt="" title=""></li>
+                                                <li><i class="triangle-down"></i><img src="http://img6.ugoshop.com/ugoimg/imgFile/201812/1544504736908.png"
+                                                        data-src="http://img5.ugoshop.com/ugoimg/imgFile/201812/1544504736908.png"
+                                                        alt="" title=""></li>
+                                                <li><i class="triangle-down"></i><img src="http://img3.ugoshop.com/ugoimg/imgFile/201812/1544504737643.png"
+                                                        data-src="http://img3.ugoshop.com/ugoimg/imgFile/201812/1544504737643.png"
+                                                        alt="" title=""></li>
+                                            </ul>
+                                            <p class="datetime">2018-12-11 13:05:38</p>
+                                        </div>
+                                        <div class="attr">
+                                            <p>
+                                                &nbsp;
+                                            </p>
+                                            <p>
+                                                &nbsp;
+                                            </p>
+                                        </div>
+                                        <div class="author">
+                                            <span>138****5696</span>
+                                            <i class="comment-star comment-star-5"></i>
+                                        </div>
+                                    </li>
+                                    <li class="clearfix">
+                                        <div class="descrption">
+                                            <p class="text">
+                                                本来咳嗽很久，吃了一十几粒就好了，现在雾霾大雾天继续吃
+                                            </p>
+                                            <ul class="clearfix"></ul>
+                                            <p class="datetime">2018-12-05 15:06:44</p>
+                                        </div>
+                                        <div class="attr">
+                                            <p>
+                                                &nbsp;
+                                            </p>
+                                            <p>
+                                                &nbsp;
+                                            </p>
+                                        </div>
+                                        <div class="author">
+                                            <span>135****2129</span>
+                                            <i class="comment-star comment-star-5"></i>
+                                        </div>
+                                    </li>
+                                    <li class="clearfix">
+                                        <div class="descrption">
+                                            <p class="text">
+                                                不错！！！！！！！！！！！
+                                            </p>
+                                            <ul class="clearfix"></ul>
+                                            <p class="datetime">2018-12-05 12:57:14</p>
+                                        </div>
+                                        <div class="attr">
+                                            <p>
+                                                &nbsp;
+                                            </p>
+                                            <p>
+                                                &nbsp;
+                                            </p>
+                                        </div>
+                                        <div class="author">
+                                            <span>159****9902</span>
+                                            <i class="comment-star comment-star-5"></i>
+                                        </div>
+                                    </li>
+                                    <li class="clearfix">
+                                        <div class="descrption">
+                                            <p class="text">
+                                                不错！！！！！！！！！！！！！！！
+                                            </p>
+                                            <ul class="clearfix"></ul>
+                                            <p class="datetime">2018-12-05 12:56:15</p>
+                                        </div>
+                                        <div class="attr">
+                                            <p>
+                                                &nbsp;
+                                            </p>
+                                            <p>
+                                                &nbsp;
+                                            </p>
+                                        </div>
+                                        <div class="author">
+                                            <span>159****9902</span>
+                                            <i class="comment-star comment-star-5"></i>
+                                        </div>
+                                    </li>
+                                    <li class="clearfix">
+                                        <div class="descrption">
+                                            <p class="text">
+                                                还没用，希望象主持人说的那样好！
+                                            </p>
+                                            <ul class="clearfix"></ul>
+                                            <p class="datetime">2018-11-28 20:18:13</p>
+                                        </div>
+                                        <div class="attr">
+                                            <p>
+                                                &nbsp;
+                                            </p>
+                                            <p>
+                                                &nbsp;
+                                            </p>
+                                        </div>
+                                        <div class="author">
+                                            <span>139****1932</span>
+                                            <i class="comment-star comment-star-5"></i>
+                                        </div>
+                                    </li>
+                                    <li class="clearfix">
+                                        <div class="descrption">
+                                            <p class="text">
+                                                非常好 会回购
+                                            </p>
+                                            <ul class="clearfix"></ul>
+                                            <p class="datetime">2018-11-27 11:00:07</p>
+                                        </div>
+                                        <div class="attr">
+                                            <p>
+                                                &nbsp;
+                                            </p>
+                                            <p>
+                                                &nbsp;
+                                            </p>
+                                        </div>
+                                        <div class="author">
+                                            <span>136****5701</span>
+                                            <i class="comment-star comment-star-5"></i>
+                                        </div>
+                                    </li>
+                                    <li class="clearfix">
+                                        <div class="descrption">
+                                            <p class="text">
+                                                吃了感觉很舒服，咳嗽一直不好，收到吃了3次，感觉咳嗽有改善
+                                            </p>
+                                            <ul class="clearfix"></ul>
+                                            <p class="datetime">2018-11-25 14:30:07</p>
+                                        </div>
+                                        <div class="attr">
+                                            <p>
+                                                &nbsp;
+                                            </p>
+                                            <p>
+                                                &nbsp;
+                                            </p>
+                                        </div>
+                                        <div class="author">
+                                            <span>139****6252</span>
+                                            <i class="comment-star comment-star-5"></i>
+                                        </div>
+                                    </li>
+                                    <li class="clearfix">
+                                        <div class="descrption">
+                                            <p class="text">
+                                                挺好挺好挺好挺好挺好
+                                            </p>
+                                            <ul class="clearfix"></ul>
+                                            <p class="datetime">2018-11-19 10:07:20</p>
+                                        </div>
+                                        <div class="attr">
+                                            <p>
+                                                &nbsp;
+                                            </p>
+                                            <p>
+                                                &nbsp;
+                                            </p>
+                                        </div>
+                                        <div class="author">
+                                            <span>135****3608</span>
+                                            <i class="comment-star comment-star-5"></i>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!-- <div class="comment-page"><a class="text" href="#goods_comment"><code class="code-r">&lt;</code>上一页</a><a
+                                href="#goods_comment" onclick="comment_pl(1)" class="p_num current">1</a><a href="#goods_comment"
+                                onclick="comment_pl(2)" class="p_num">2</a><a href="#goods_comment" onclick="comment_pl(3)"
+                                class="p_num">3</a><a href="#goods_comment" onclick="comment_pl(4)" class="p_num">4</a><a
+                                class="text" href="#goods_comment" onclick="comment_pl(&quot;2&quot;)">下一页<code class="code-l">&gt;</code></a></div>
+                    </div> -->
+                        <div class="service" id="services">
+                            <h3 class="title"></h3>
+                            <div class="service-box sh-goods-block">
+                                <img class="lazy-loading" src="/themes/ugo/images/2015/2015_public/grey.png"
+                                    data-original="/themes/ugo/images/2016/2016_goods/zy-service-pay.jpg" alt="" title="">
+                                <img class="lazy-loading" src="/themes/ugo/images/2015/2015_public/grey.png"
+                                    data-original="/themes/ugo/images/2016/2016_goods/fei-service-tui.jpg" alt="" title="">
+                            </div>
+                            <div class="seo sh-goods-block">
+                                <!--                                                    <div class="box clearfix">
+                                    <span class="label">使用指南：</span>
+                                    <div class="hide">
+                                        <ul class="left">
+                                                                                        <li><a href="http://info.ugoshop.com/info-6877.html" target="_blank">1. 美食排毒 让你面色好起来</a></li>
+                                                                                        <li><a href="http://info.ugoshop.com/info-6529.html" target="_blank">2. 春季吃红薯 排毒又瘦身</a></li>
+                                                                                        <li><a href="http://info.ugoshop.com/info-6444.html" target="_blank">3. 早晨第一杯水怎么喝最健康</a></li>
+                                                                                        <li><a href="http://info.ugoshop.com/info-6206.html" target="_blank">4. 菊花茶的泡饮方法</a></li>
+                                                                                        <li><a href="http://info.ugoshop.com/info-6205.html" target="_blank">5. 玫瑰花茶有什么功效</a></li>
+                                                                                        <li><a href="http://info.ugoshop.com/info-6204.html" target="_blank">6. 桂圆玫瑰花茶制作方法</a></li>
+                                                                                        <li><a href="http://info.ugoshop.com/info-6203.html" target="_blank">7. 冬季排毒养颜瘦身茶</a></li>
+                                                                                        <li><a href="http://info.ugoshop.com/info-6201.html" target="_blank">8. 排毒养颜胶囊可以治痤疮吗</a></li>
+                                                                                </ul>
+                                        <a href="javascript:;" id="more_guide" class="more left"><span>查看更多</span><i class="hide"><i></i></i></a>
+                                    </div>
+                                </div>
+                            -->
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 商品图/同类商品区域 -->
+                    <div class="sh-goods-similar similar-footer">
+                        <div class="inner-header">
+                            <div class="icon-vl">
+                                <i></i>
+                            </div>
+                            <strong>看看其他同类商品</strong>
+                        </div>
+                        <ul class="clearfix" id="final_buy">
+                            <li>
+                                <a href="http://www.ugoshop.com/goods-125711.html" target="_blank">
+                                    <img src="http://img3.ugoshop.com/images/201807/1530646463067113777.jpg" alt="跨境品德国双心叶黄素多维护眼胶囊"
+                                        title="优品惠跨境品德国双心叶黄素多维护眼胶囊">
+                                    <span class="title">跨境品德国双心叶黄素多维护眼胶囊</span>
+                                    <span class="price">
+                                        <span><i>￥</i>399</span>
+                                    </span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="http://www.ugoshop.com/goods-149832.html" target="_blank">
+                                    <img src="http://img.ugoshop.com/images/201812/1544492895733843309.jpg" alt="郑多燕果蔬酵素粉蔬果植物酵素代餐粉10g/袋*10/盒*6盒"
+                                        title="优品惠郑多燕果蔬酵素粉蔬果植物酵素代餐粉10g/袋*10/盒*6盒">
+                                    <span class="title">郑多燕果蔬酵素粉蔬果植物酵素代餐粉10g/袋*10/盒*6盒</span>
+                                    <span class="price">
+                                        <span><i>￥</i>239</span><span class="or_p">|平日价</span><span class="old_p">¥299</span>
+                                    </span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="http://www.ugoshop.com/goods-149829.html" target="_blank">
+                                    <img src="http://img3.ugoshop.com/images/201812/1544494011212209943.jpg" alt="郑多燕酵素奶昔代餐粉杯膳食果蔬纤维健身营养饱腹5g*7袋/盒*5盒"
+                                        title="优品惠郑多燕酵素奶昔代餐粉杯膳食果蔬纤维健身营养饱腹5g*7袋/盒*5盒">
+                                    <span class="title">郑多燕酵素奶昔代餐粉杯膳食果蔬纤维健身营养饱腹5g*7袋/盒*5盒</span>
+                                    <span class="price">
+                                        <span><i>￥</i>79</span><span class="or_p">|平日价</span><span class="old_p">¥99</span>
+                                    </span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="http://www.ugoshop.com/goods-149830.html" target="_blank">
+                                    <img src="http://img6.ugoshop.com/images/201812/1544493398642947847.jpg" alt="多燕瘦 蓝莓酵素果冻soso棒15g*7条/袋*4盒"
+                                        title="优品惠多燕瘦 蓝莓酵素果冻soso棒15g*7条/袋*4盒">
+                                    <span class="title">多燕瘦 蓝莓酵素果冻soso棒15g*7条/袋*4盒</span>
+                                    <span class="price">
+                                        <span><i>￥</i>149</span><span class="or_p">|平日价</span><span class="old_p">¥168</span>
+                                    </span>
+                                </a>
+                            </li>
+                            <li id="simi4" style="display:none;">
+                                <a href="http://www.ugoshop.com/goods-149831.html" target="_blank">
+                                    <img src="http://img4.ugoshop.com/images/201812/1544495566257935731.jpg" alt="郑多燕奇亚籽乳酸菌酵素果冻条水果孝素代餐清肠排宿便15g/条*7袋*4盒"
+                                        title="优品惠郑多燕奇亚籽乳酸菌酵素果冻条水果孝素代餐清肠排宿便15g/条*7袋*4盒">
+                                    <span class="title">郑多燕奇亚籽乳酸菌酵素果冻条水果孝素代餐清肠排宿便15g/条*7袋*4盒</span>
+                                    <span class="price">
+                                        <span><i>￥</i>149</span><span class="or_p">|平日价</span><span class="old_p">¥199</span>
+                                    </span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- 大家都在看 -->
+                <div class="watching">
+                    <h3 class="title">
+                        大家都在看
+                    </h3>
+                    <ul id="all_watching">
+                        <li>
+                            <a href="http://www.ugoshop.com/goods-23458.html">
+                                <img src="http://img3.ugoshop.com/images/201605/1463684036941761160.jpg" alt="一朵莲 纤体梅加量·10粒*8盒"
+                                    title="优品惠一朵莲 纤体梅加量·10粒*8盒">
+                                <span class="title">一朵莲 纤体梅加量·10粒*8盒</span>
+                                <span class="price">
+                                    <span><i>￥</i>199</span>
+                                </span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://www.ugoshop.com/goods-58038.html">
+                                <img src="http://img4.ugoshop.com/images/201703/1490142958750133449.jpg" alt="怀山堂 铁棍怀山粉健康·82条"
+                                    title="优品惠怀山堂 铁棍怀山粉健康·82条">
+                                <span class="title">怀山堂 铁棍怀山粉健康·82条</span>
+                                <span class="price">
+                                    <span><i>￥</i>298</span>
+                                </span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://www.ugoshop.com/goods-23458.html">
+                                <img src="http://img3.ugoshop.com/images/201605/1463684036941761160.jpg" alt="一朵莲 纤体梅加量·10粒*8盒"
+                                    title="优品惠一朵莲 纤体梅加量·10粒*8盒">
+                                <span class="title">一朵莲 纤体梅加量·10粒*8盒</span>
+                                <span class="price">
+                                    <span><i>￥</i>199</span>
+                                </span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://www.ugoshop.com/goods-58038.html">
+                                <img src="http://img3.ugoshop.com/images/201703/1490142958750133449.jpg" alt="怀山堂 铁棍怀山粉健康·82条"
+                                    title="优品惠怀山堂 铁棍怀山粉健康·82条">
+                                <span class="title">怀山堂 铁棍怀山粉健康·82条</span>
+                                <span class="price">
+                                    <span><i>￥</i>298</span>
+                                </span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://www.ugoshop.com/goods-23458.html">
+                                <img src="http://img2.ugoshop.com/images/201605/1463684036941761160.jpg" alt="一朵莲 纤体梅加量·10粒*8盒"
+                                    title="优品惠一朵莲 纤体梅加量·10粒*8盒">
+                                <span class="title">一朵莲 纤体梅加量·10粒*8盒</span>
+                                <span class="price">
+                                    <span><i>￥</i>199</span>
+                                </span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://www.ugoshop.com/goods-58038.html">
+                                <img src="http://img.ugoshop.com/images/201703/1490142958750133449.jpg" alt="怀山堂 铁棍怀山粉健康·82条"
+                                    title="优品惠怀山堂 铁棍怀山粉健康·82条">
+                                <span class="title">怀山堂 铁棍怀山粉健康·82条</span>
+                                <span class="price">
+                                    <span><i>￥</i>298</span>
+                                </span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://www.ugoshop.com/goods-43301.html">
+                                <img src="http://img4.ugoshop.com/images/201608/1471988115058843894.jpg" alt="东来顺筋头巴脑超值组（500g*8袋+羊杂200g*2袋）"
+                                    title="优品惠东来顺筋头巴脑超值组（500g*8袋+羊杂200g*2袋）">
+                                <span class="title">东来顺筋头巴脑超值组（500g*8袋+羊杂200g*2袋）</span>
+                                <span class="price">
+                                    <span><i>￥</i>298</span>
+                                </span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+
+
+
+        <!-- 底部 -->
+        <div class="footer">
+            <div class="footer_con">
+                <div class="webz"><img alt="" src="http://www.ugoshop.com/themes/ugo/images/2015/2015_public/footer_ad.jpg"
+                        width="1000" height="102"></div>
+            </div>
+            <div class="footer_link">
+                <div class="flist clearfix">
+                    <dl class="flistdl">
+                        <dt>新手上路</dt>
+                        <dd><a target="_blank" href="http://www.ugoshop.com/article-37.html">新用户注册</a></dd>
+                        <dd><a target="_blank" href="http://www.ugoshop.com/article-46.html">忘记密码</a></dd>
+                        <dd><a target="_blank" href="http://www.ugoshop.com/article-45.html">购物流程</a></dd>
+                    </dl>
+                    <dl class="flistdl">
+                        <dt>支付配送</dt>
+                        <dd><a target="_blank" href="http://www.ugoshop.com/article-38.html">货到付款</a></dd>
+                        <dd><a target="_blank" href="http://www.ugoshop.com/article-49.html">支付宝</a></dd>
+                        <dd><a target="_blank" href="http://www.ugoshop.com/article-52.html">配送方式</a></dd>
+                    </dl>
+                    <dl class="flistdl">
+                        <dt>会员服务</dt>
+                        <dd><a target="_blank" href="http://www.ugoshop.com/article-54.html">服务承诺</a></dd>
+                        <dd><a target="_blank" href="http://www.ugoshop.com/article-1379.html">会员制度</a></dd>
+                        <dd><a target="_blank" href="http://www.ugoshop.com/article-47.html">积分介绍</a></dd>
+                        <dd><a target="_blank" href="http://www.ugoshop.com/article-40.html">退换货原则</a></dd>
+                    </dl>
+                    <dl class="flistdl nob">
+                        <dt>关于优品惠</dt>
+                        <dd><a target="_blank" href="http://www.ugoshop.com/about_index.php">企业介绍</a></dd>
+                        <dd><a target="_blank" href="http://www.ugoshop.com/about_contact.php">联系我们</a></dd>
+                        <dd><a target="_blank" href="http://www.ugoshop.com/about_zhaoshang.php">招商专区</a></dd>
+                    </dl>
+                    <dl class="flistdl2 clearfix">
+                        <dt class="l"><a target="_blank" href="http://www.ugoshop.com/app/"><img alt="" src="../image/ewm90X90.jpg"
+                                    width="80" height="80"><i>手机优品惠</i><em>（优购物）</em></a></dt>
+                        <dd class="l"><img alt="" src="../image/foot_dh.jpg" width="149" height="38"></dd>
+                    </dl>
+                </div>
+            </div>
+            <div class="footerinfo webw">
+                <p class="footer-list"><a target="_blank" href="http://www.ugoshop.com">首页</a> |
+                    <a target="_blank" href="http://www.ugoshop.com/about_index.php">关于优品惠</a> |
+                    <a target="_blank" href="/about_index.php?company=ugo">优购物</a> |
+                    <a target="_blank" href="http://www.ugoshop.com/about_contact.php">联系我们</a> |
+                    <a target="_blank" href="http://www.ugoshop.com/about_join.php">招贤纳士</a> |
+                    <a target="_blank" href="http://www.ugoshop.com/about_zhaoshang.php">招商专区</a> |
+                    <a target="_blank" href="http://scm.17ugo.com/">供应商入口</a> |
+                    <a target="_blank" href="http://www.ugoshop.com/train/train_c.html">新人培训</a> |
+                    <a target="_blank" href="http://www.ugoshop.com/link.php">友情链接</a> |
+                    <a target="_blank" href="http://www.ugoshop.com/sitemap.html">网站地图</a> |
+                    <a target="_blank" href="http://info.ugoshop.com/">资讯中心</a> |
+                    <a target="_blank" href="http://www.ugoshop.com/review.html">评论</a> |
+                    <a target="_blank" href="http://www.ugoshop.com/photo.html"> 图片</a>
+                </p>
+                <div class="yqlink clearfix">
+                    <p class="dlphh l" id="friend_link"><em>友情链接：</em><a target="_blank" href="http://www.loho88.com/">配眼镜</a><a
+                            target="_blank" href="http://www.zocai.com/">佐卡伊珠宝网</a><a target="_blank" href="http://www.wbiao.cn/">腕表名表</a><a
+                            target="_blank" href="http://www.kaitao.cn/">如何开网店</a><a target="_blank" href="http://www.sodao.com">免费试用</a><a
+                            target="_blank" href="http://www.crd.cn/">钻戒网</a></p>
+                    <div class="r_button r">▼</div>
+                </div>
+                <p class="copyright">优品_优品惠（优购物）全球优品特卖网站 专属于千万女性的优品特卖网站,优品_优品惠（优购物）电视购物官方网站,100%正品保证 支持货到付款.</p>
+                <p class="copyright">Copyright©2007-2017 &nbsp; 公司名称:北京惠买网络科技有限公司 &nbsp; 公司地址:北京市北京经济技术开发区同济南路19号7幢2层C区
+                    服务热线：400-707-0707</p>
+                <p class="footer-list copyright"> 统一社会信用代码:91110302339739621C &nbsp; ICP备案号:京ICP备15039150号-1 &nbsp;
+                    食品流通许可证编号:JY11131010332635 &nbsp;<a href="/ugoshop.html" target="_blank">营业执照</a><a href="http://img.ugoshop.com/images/wangwenzheng.jpg"
+                        target="_blank">京网文(2017)10902-1271</a>
+                    <a href="http://img.ugoshop.com/images/ugo_edi.png" target="_blank">增值业务经营许可证：京B2-20181380 </a>
+                </p>
+                <div style="margin:0 auto;text-align:center;">
+                    <a target="_blank" href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=11030102000055"
+                        style="display:inline-block;text-decoration:none;height:22px;line-height:22px;">
+                        <img src="../image/bei.png" style="float:left;">
+                        <p style="float:left;margin: 0px 0px 0px 5px; color:#555;">京公网安备 11030102000055号</p>
+                    </a>
+                </div>
+            </div>
+        </div>
+</body>
+<script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.js"></script>
+<script src="../scripts/details.js"></script>
+
+
+</html>

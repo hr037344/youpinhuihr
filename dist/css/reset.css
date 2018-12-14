@@ -30,6 +30,7 @@ body {
 }
 ol, ul {
     list-style: none;
+    list-style: outside none none;  
 }
 blockquote, q {
     quotes: none;
@@ -42,4 +43,11 @@ q:before, q:after {
 table {
     border-collapse: collapse;
     border-spacing: 0;
+}
+a{
+    text-decoration: none;
+}
+.clear{clear:both;height:0;overflow:hidden;}
+input {
+    border:none;
 }

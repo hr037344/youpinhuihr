@@ -39,7 +39,7 @@ gulp.task("connect",()=>{
         livereload:true,
         middleware:function(){
         return[
-            proxy("/api",{//代理服务器
+            proxy("/uesr",{//代理服务器
                 target:"http://localhost:3000",
                 pathRewrite:{
                     '^/api':'/',
@@ -50,8 +50,6 @@ gulp.task("connect",()=>{
     })
 })
 
-  //如何发起端口请求：
-  //localhost:8888/proxy/目标;
 
    
 gulp.task("html",()=>{
@@ -66,7 +64,7 @@ gulp.task("image", ()=>{
 })
 
 gulp.task("js", ()=>{
-    return gulp.src("./src/scripts/*.js","!js/jquery.js")
+    return gulp.src("./src/scripts/*.js")
     .pipe(gulp.dest("./dist/scripts"))
     .pipe(connect.reload())
     .pipe(uglify())
